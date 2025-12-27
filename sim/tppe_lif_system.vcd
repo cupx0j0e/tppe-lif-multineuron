@@ -1,0 +1,9535 @@
+$date
+	Sat Dec 27 12:57:03 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_TPPE_LIF_MULTI_SYSTEM_FINAL $end
+$var wire 1 ! spike_valid $end
+$var wire 4 " spike_id [3:0] $end
+$var reg 1 # clk $end
+$var reg 4 $ col_base [3:0] $end
+$var reg 1 % enable $end
+$var reg 5 & intersection_threshold [4:0] $end
+$var reg 4 ' neuron_id [3:0] $end
+$var reg 1 ( rst_n $end
+$var reg 1 ) spike_in $end
+$var reg 1 * spike_ready $end
+$var reg 256 + thresholds [255:0] $end
+$var reg 64 , weight_patterns [63:0] $end
+$var reg 1 - weight_valid $end
+$var integer 32 . cycle_count [31:0] $end
+$var integer 32 / spike_count [31:0] $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 4 0 col_base [3:0] $end
+$var wire 1 % enable $end
+$var wire 5 1 intersection_threshold [4:0] $end
+$var wire 4 2 neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 ) spike_in $end
+$var wire 1 * spike_ready $end
+$var wire 256 3 thresholds [255:0] $end
+$var wire 64 4 weight_patterns [63:0] $end
+$var wire 1 - weight_valid $end
+$var wire 1 ! spike_valid $end
+$var wire 4 5 spike_id [3:0] $end
+$var wire 16 6 spike_fifo_valid [15:0] $end
+$var wire 16 7 spike_fifo_ready [15:0] $end
+$var wire 64 8 spike_fifo_id [63:0] $end
+$var wire 16 9 lif_spike_raw [15:0] $end
+$var wire 16 : lif_score_valid [15:0] $end
+$var wire 80 ; lif_score [79:0] $end
+$var wire 1 < cand_valid $end
+$var wire 5 = cand_score [4:0] $end
+$var wire 4 > cand_neuron [3:0] $end
+$var wire 4 ? cand_col [3:0] $end
+$var reg 4 @ scan_cnt [3:0] $end
+$var reg 1 A scan_start_en $end
+$scope begin SPIKE_FIFO_GEN[0] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 B spike_accept $end
+$var wire 4 C spike_id_in [3:0] $end
+$var wire 1 D spike_in $end
+$var wire 1 E spike_valid $end
+$var wire 1 F spike_ready $end
+$var wire 4 G spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 H in_data [3:0] $end
+$var wire 1 F in_ready $end
+$var wire 1 D in_valid $end
+$var wire 4 I out_data [3:0] $end
+$var wire 1 B out_ready $end
+$var wire 1 E out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 J data [3:0] $end
+$var reg 1 K full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[1] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 L spike_accept $end
+$var wire 4 M spike_id_in [3:0] $end
+$var wire 1 N spike_in $end
+$var wire 1 O spike_valid $end
+$var wire 1 P spike_ready $end
+$var wire 4 Q spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 R in_data [3:0] $end
+$var wire 1 P in_ready $end
+$var wire 1 N in_valid $end
+$var wire 4 S out_data [3:0] $end
+$var wire 1 L out_ready $end
+$var wire 1 O out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 T data [3:0] $end
+$var reg 1 U full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[2] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 V spike_accept $end
+$var wire 4 W spike_id_in [3:0] $end
+$var wire 1 X spike_in $end
+$var wire 1 Y spike_valid $end
+$var wire 1 Z spike_ready $end
+$var wire 4 [ spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 \ in_data [3:0] $end
+$var wire 1 Z in_ready $end
+$var wire 1 X in_valid $end
+$var wire 4 ] out_data [3:0] $end
+$var wire 1 V out_ready $end
+$var wire 1 Y out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 ^ data [3:0] $end
+$var reg 1 _ full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[3] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 ` spike_accept $end
+$var wire 4 a spike_id_in [3:0] $end
+$var wire 1 b spike_in $end
+$var wire 1 c spike_valid $end
+$var wire 1 d spike_ready $end
+$var wire 4 e spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 f in_data [3:0] $end
+$var wire 1 d in_ready $end
+$var wire 1 b in_valid $end
+$var wire 4 g out_data [3:0] $end
+$var wire 1 ` out_ready $end
+$var wire 1 c out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 h data [3:0] $end
+$var reg 1 i full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[4] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 j spike_accept $end
+$var wire 4 k spike_id_in [3:0] $end
+$var wire 1 l spike_in $end
+$var wire 1 m spike_valid $end
+$var wire 1 n spike_ready $end
+$var wire 4 o spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 p in_data [3:0] $end
+$var wire 1 n in_ready $end
+$var wire 1 l in_valid $end
+$var wire 4 q out_data [3:0] $end
+$var wire 1 j out_ready $end
+$var wire 1 m out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 r data [3:0] $end
+$var reg 1 s full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[5] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 t spike_accept $end
+$var wire 4 u spike_id_in [3:0] $end
+$var wire 1 v spike_in $end
+$var wire 1 w spike_valid $end
+$var wire 1 x spike_ready $end
+$var wire 4 y spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 z in_data [3:0] $end
+$var wire 1 x in_ready $end
+$var wire 1 v in_valid $end
+$var wire 4 { out_data [3:0] $end
+$var wire 1 t out_ready $end
+$var wire 1 w out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 | data [3:0] $end
+$var reg 1 } full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[6] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 ~ spike_accept $end
+$var wire 4 !" spike_id_in [3:0] $end
+$var wire 1 "" spike_in $end
+$var wire 1 #" spike_valid $end
+$var wire 1 $" spike_ready $end
+$var wire 4 %" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 &" in_data [3:0] $end
+$var wire 1 $" in_ready $end
+$var wire 1 "" in_valid $end
+$var wire 4 '" out_data [3:0] $end
+$var wire 1 ~ out_ready $end
+$var wire 1 #" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 (" data [3:0] $end
+$var reg 1 )" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[7] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 *" spike_accept $end
+$var wire 4 +" spike_id_in [3:0] $end
+$var wire 1 ," spike_in $end
+$var wire 1 -" spike_valid $end
+$var wire 1 ." spike_ready $end
+$var wire 4 /" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 0" in_data [3:0] $end
+$var wire 1 ." in_ready $end
+$var wire 1 ," in_valid $end
+$var wire 4 1" out_data [3:0] $end
+$var wire 1 *" out_ready $end
+$var wire 1 -" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 2" data [3:0] $end
+$var reg 1 3" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[8] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 4" spike_accept $end
+$var wire 4 5" spike_id_in [3:0] $end
+$var wire 1 6" spike_in $end
+$var wire 1 7" spike_valid $end
+$var wire 1 8" spike_ready $end
+$var wire 4 9" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 :" in_data [3:0] $end
+$var wire 1 8" in_ready $end
+$var wire 1 6" in_valid $end
+$var wire 4 ;" out_data [3:0] $end
+$var wire 1 4" out_ready $end
+$var wire 1 7" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 <" data [3:0] $end
+$var reg 1 =" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[9] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 >" spike_accept $end
+$var wire 4 ?" spike_id_in [3:0] $end
+$var wire 1 @" spike_in $end
+$var wire 1 A" spike_valid $end
+$var wire 1 B" spike_ready $end
+$var wire 4 C" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 D" in_data [3:0] $end
+$var wire 1 B" in_ready $end
+$var wire 1 @" in_valid $end
+$var wire 4 E" out_data [3:0] $end
+$var wire 1 >" out_ready $end
+$var wire 1 A" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 F" data [3:0] $end
+$var reg 1 G" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[10] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 H" spike_accept $end
+$var wire 4 I" spike_id_in [3:0] $end
+$var wire 1 J" spike_in $end
+$var wire 1 K" spike_valid $end
+$var wire 1 L" spike_ready $end
+$var wire 4 M" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 N" in_data [3:0] $end
+$var wire 1 L" in_ready $end
+$var wire 1 J" in_valid $end
+$var wire 4 O" out_data [3:0] $end
+$var wire 1 H" out_ready $end
+$var wire 1 K" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 P" data [3:0] $end
+$var reg 1 Q" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[11] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 R" spike_accept $end
+$var wire 4 S" spike_id_in [3:0] $end
+$var wire 1 T" spike_in $end
+$var wire 1 U" spike_valid $end
+$var wire 1 V" spike_ready $end
+$var wire 4 W" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 X" in_data [3:0] $end
+$var wire 1 V" in_ready $end
+$var wire 1 T" in_valid $end
+$var wire 4 Y" out_data [3:0] $end
+$var wire 1 R" out_ready $end
+$var wire 1 U" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 Z" data [3:0] $end
+$var reg 1 [" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[12] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 \" spike_accept $end
+$var wire 4 ]" spike_id_in [3:0] $end
+$var wire 1 ^" spike_in $end
+$var wire 1 _" spike_valid $end
+$var wire 1 `" spike_ready $end
+$var wire 4 a" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 b" in_data [3:0] $end
+$var wire 1 `" in_ready $end
+$var wire 1 ^" in_valid $end
+$var wire 4 c" out_data [3:0] $end
+$var wire 1 \" out_ready $end
+$var wire 1 _" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 d" data [3:0] $end
+$var reg 1 e" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[13] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 f" spike_accept $end
+$var wire 4 g" spike_id_in [3:0] $end
+$var wire 1 h" spike_in $end
+$var wire 1 i" spike_valid $end
+$var wire 1 j" spike_ready $end
+$var wire 4 k" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 l" in_data [3:0] $end
+$var wire 1 j" in_ready $end
+$var wire 1 h" in_valid $end
+$var wire 4 m" out_data [3:0] $end
+$var wire 1 f" out_ready $end
+$var wire 1 i" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 n" data [3:0] $end
+$var reg 1 o" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[14] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 p" spike_accept $end
+$var wire 4 q" spike_id_in [3:0] $end
+$var wire 1 r" spike_in $end
+$var wire 1 s" spike_valid $end
+$var wire 1 t" spike_ready $end
+$var wire 4 u" spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 v" in_data [3:0] $end
+$var wire 1 t" in_ready $end
+$var wire 1 r" in_valid $end
+$var wire 4 w" out_data [3:0] $end
+$var wire 1 p" out_ready $end
+$var wire 1 s" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 x" data [3:0] $end
+$var reg 1 y" full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin SPIKE_FIFO_GEN[15] $end
+$scope module u_spike_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 z" spike_accept $end
+$var wire 4 {" spike_id_in [3:0] $end
+$var wire 1 |" spike_in $end
+$var wire 1 }" spike_valid $end
+$var wire 1 ~" spike_ready $end
+$var wire 4 !# spike_id_out [3:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 4 "# in_data [3:0] $end
+$var wire 1 ~" in_ready $end
+$var wire 1 |" in_valid $end
+$var wire 4 ## out_data [3:0] $end
+$var wire 1 z" out_ready $end
+$var wire 1 }" out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 4 $# data [3:0] $end
+$var reg 1 %# full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module u_arbiter $end
+$var wire 1 # clk $end
+$var wire 16 &# req_valid [15:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 * spike_ready $end
+$var reg 1 '# found $end
+$var reg 4 (# last_grant [3:0] $end
+$var reg 16 )# req_grant [15:0] $end
+$var reg 4 *# spike_id [3:0] $end
+$var reg 1 ! spike_valid $end
+$var integer 32 +# i [31:0] $end
+$scope begin $unm_blk_37 $end
+$var integer 32 ,# idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope module u_lif_array $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 256 -# thresholds [255:0] $end
+$var wire 16 .# spike_vec [15:0] $end
+$var wire 16 /# lif_score_valid [15:0] $end
+$var wire 80 0# lif_score [79:0] $end
+$scope begin LIF_GEN[0] $end
+$var wire 1 1# ev_ready $end
+$var wire 1 2# ev_valid $end
+$var wire 5 3# ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 4# neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 5# spike_id [3:0] $end
+$var wire 1 1# spike_ready $end
+$var wire 1 6# spike_valid $end
+$var wire 16 7# threshold [15:0] $end
+$var wire 16 8# vmem [15:0] $end
+$var wire 1 9# spike_raw $end
+$var wire 1 2# score_valid $end
+$var wire 5 :# score_in [4:0] $end
+$var wire 1 ;# reset_vmem_from_fire $end
+$var wire 16 <# leak [15:0] $end
+$var wire 16 =# fast_sum [15:0] $end
+$var wire 1 ># corr_enable $end
+$var wire 16 ?# corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 @# clear $end
+$var wire 1 # clk $end
+$var wire 1 ># enable $end
+$var wire 8 A# frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 B# corr_out [15:0] $end
+$var reg 24 C# acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 D# neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 E# threshold [15:0] $end
+$var wire 16 F# vmem [15:0] $end
+$var reg 1 G# fired $end
+$var reg 1 ;# reset_vmem $end
+$var reg 1 9# spike $end
+$var reg 4 H# spike_id [3:0] $end
+$var reg 16 I# vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 J# vmem_in [15:0] $end
+$var reg 16 K# leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 2# score_valid $end
+$var wire 5 L# score_in [4:0] $end
+$var reg 16 M# sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 N# corr [15:0] $end
+$var wire 16 O# fast_sum [15:0] $end
+$var wire 16 P# leak [15:0] $end
+$var wire 1 Q# reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 R# vmem_next_ext [16:0] $end
+$var wire 16 S# vmem_next [15:0] $end
+$var reg 16 T# vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 1# fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 U# score_in [4:0] $end
+$var wire 1 V# score_valid $end
+$var wire 1 W# score_ready $end
+$var wire 1 2# fifo_valid $end
+$var wire 5 X# fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 Y# in_data [4:0] $end
+$var wire 1 W# in_ready $end
+$var wire 1 V# in_valid $end
+$var wire 5 Z# out_data [4:0] $end
+$var wire 1 1# out_ready $end
+$var wire 1 2# out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 [# data [4:0] $end
+$var reg 1 \# full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[1] $end
+$var wire 1 ]# ev_ready $end
+$var wire 1 ^# ev_valid $end
+$var wire 5 _# ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 `# neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 a# spike_id [3:0] $end
+$var wire 1 ]# spike_ready $end
+$var wire 1 b# spike_valid $end
+$var wire 16 c# threshold [15:0] $end
+$var wire 16 d# vmem [15:0] $end
+$var wire 1 e# spike_raw $end
+$var wire 1 ^# score_valid $end
+$var wire 5 f# score_in [4:0] $end
+$var wire 1 g# reset_vmem_from_fire $end
+$var wire 16 h# leak [15:0] $end
+$var wire 16 i# fast_sum [15:0] $end
+$var wire 1 j# corr_enable $end
+$var wire 16 k# corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 l# clear $end
+$var wire 1 # clk $end
+$var wire 1 j# enable $end
+$var wire 8 m# frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 n# corr_out [15:0] $end
+$var reg 24 o# acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 p# neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 q# threshold [15:0] $end
+$var wire 16 r# vmem [15:0] $end
+$var reg 1 s# fired $end
+$var reg 1 g# reset_vmem $end
+$var reg 1 e# spike $end
+$var reg 4 t# spike_id [3:0] $end
+$var reg 16 u# vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 v# vmem_in [15:0] $end
+$var reg 16 w# leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 ^# score_valid $end
+$var wire 5 x# score_in [4:0] $end
+$var reg 16 y# sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 z# corr [15:0] $end
+$var wire 16 {# fast_sum [15:0] $end
+$var wire 16 |# leak [15:0] $end
+$var wire 1 }# reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 ~# vmem_next_ext [16:0] $end
+$var wire 16 !$ vmem_next [15:0] $end
+$var reg 16 "$ vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ]# fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 #$ score_in [4:0] $end
+$var wire 1 $$ score_valid $end
+$var wire 1 %$ score_ready $end
+$var wire 1 ^# fifo_valid $end
+$var wire 5 &$ fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 '$ in_data [4:0] $end
+$var wire 1 %$ in_ready $end
+$var wire 1 $$ in_valid $end
+$var wire 5 ($ out_data [4:0] $end
+$var wire 1 ]# out_ready $end
+$var wire 1 ^# out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 )$ data [4:0] $end
+$var reg 1 *$ full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[2] $end
+$var wire 1 +$ ev_ready $end
+$var wire 1 ,$ ev_valid $end
+$var wire 5 -$ ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 .$ neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 /$ spike_id [3:0] $end
+$var wire 1 +$ spike_ready $end
+$var wire 1 0$ spike_valid $end
+$var wire 16 1$ threshold [15:0] $end
+$var wire 16 2$ vmem [15:0] $end
+$var wire 1 3$ spike_raw $end
+$var wire 1 ,$ score_valid $end
+$var wire 5 4$ score_in [4:0] $end
+$var wire 1 5$ reset_vmem_from_fire $end
+$var wire 16 6$ leak [15:0] $end
+$var wire 16 7$ fast_sum [15:0] $end
+$var wire 1 8$ corr_enable $end
+$var wire 16 9$ corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 :$ clear $end
+$var wire 1 # clk $end
+$var wire 1 8$ enable $end
+$var wire 8 ;$ frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 <$ corr_out [15:0] $end
+$var reg 24 =$ acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 >$ neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 ?$ threshold [15:0] $end
+$var wire 16 @$ vmem [15:0] $end
+$var reg 1 A$ fired $end
+$var reg 1 5$ reset_vmem $end
+$var reg 1 3$ spike $end
+$var reg 4 B$ spike_id [3:0] $end
+$var reg 16 C$ vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 D$ vmem_in [15:0] $end
+$var reg 16 E$ leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 ,$ score_valid $end
+$var wire 5 F$ score_in [4:0] $end
+$var reg 16 G$ sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 H$ corr [15:0] $end
+$var wire 16 I$ fast_sum [15:0] $end
+$var wire 16 J$ leak [15:0] $end
+$var wire 1 K$ reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 L$ vmem_next_ext [16:0] $end
+$var wire 16 M$ vmem_next [15:0] $end
+$var reg 16 N$ vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 +$ fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 O$ score_in [4:0] $end
+$var wire 1 P$ score_valid $end
+$var wire 1 Q$ score_ready $end
+$var wire 1 ,$ fifo_valid $end
+$var wire 5 R$ fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 S$ in_data [4:0] $end
+$var wire 1 Q$ in_ready $end
+$var wire 1 P$ in_valid $end
+$var wire 5 T$ out_data [4:0] $end
+$var wire 1 +$ out_ready $end
+$var wire 1 ,$ out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 U$ data [4:0] $end
+$var reg 1 V$ full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[3] $end
+$var wire 1 W$ ev_ready $end
+$var wire 1 X$ ev_valid $end
+$var wire 5 Y$ ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 Z$ neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 [$ spike_id [3:0] $end
+$var wire 1 W$ spike_ready $end
+$var wire 1 \$ spike_valid $end
+$var wire 16 ]$ threshold [15:0] $end
+$var wire 16 ^$ vmem [15:0] $end
+$var wire 1 _$ spike_raw $end
+$var wire 1 X$ score_valid $end
+$var wire 5 `$ score_in [4:0] $end
+$var wire 1 a$ reset_vmem_from_fire $end
+$var wire 16 b$ leak [15:0] $end
+$var wire 16 c$ fast_sum [15:0] $end
+$var wire 1 d$ corr_enable $end
+$var wire 16 e$ corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 f$ clear $end
+$var wire 1 # clk $end
+$var wire 1 d$ enable $end
+$var wire 8 g$ frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 h$ corr_out [15:0] $end
+$var reg 24 i$ acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 j$ neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 k$ threshold [15:0] $end
+$var wire 16 l$ vmem [15:0] $end
+$var reg 1 m$ fired $end
+$var reg 1 a$ reset_vmem $end
+$var reg 1 _$ spike $end
+$var reg 4 n$ spike_id [3:0] $end
+$var reg 16 o$ vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 p$ vmem_in [15:0] $end
+$var reg 16 q$ leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 X$ score_valid $end
+$var wire 5 r$ score_in [4:0] $end
+$var reg 16 s$ sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 t$ corr [15:0] $end
+$var wire 16 u$ fast_sum [15:0] $end
+$var wire 16 v$ leak [15:0] $end
+$var wire 1 w$ reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 x$ vmem_next_ext [16:0] $end
+$var wire 16 y$ vmem_next [15:0] $end
+$var reg 16 z$ vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 W$ fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 {$ score_in [4:0] $end
+$var wire 1 |$ score_valid $end
+$var wire 1 }$ score_ready $end
+$var wire 1 X$ fifo_valid $end
+$var wire 5 ~$ fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 !% in_data [4:0] $end
+$var wire 1 }$ in_ready $end
+$var wire 1 |$ in_valid $end
+$var wire 5 "% out_data [4:0] $end
+$var wire 1 W$ out_ready $end
+$var wire 1 X$ out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 #% data [4:0] $end
+$var reg 1 $% full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[4] $end
+$var wire 1 %% ev_ready $end
+$var wire 1 &% ev_valid $end
+$var wire 5 '% ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 (% neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 )% spike_id [3:0] $end
+$var wire 1 %% spike_ready $end
+$var wire 1 *% spike_valid $end
+$var wire 16 +% threshold [15:0] $end
+$var wire 16 ,% vmem [15:0] $end
+$var wire 1 -% spike_raw $end
+$var wire 1 &% score_valid $end
+$var wire 5 .% score_in [4:0] $end
+$var wire 1 /% reset_vmem_from_fire $end
+$var wire 16 0% leak [15:0] $end
+$var wire 16 1% fast_sum [15:0] $end
+$var wire 1 2% corr_enable $end
+$var wire 16 3% corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 4% clear $end
+$var wire 1 # clk $end
+$var wire 1 2% enable $end
+$var wire 8 5% frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 6% corr_out [15:0] $end
+$var reg 24 7% acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 8% neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 9% threshold [15:0] $end
+$var wire 16 :% vmem [15:0] $end
+$var reg 1 ;% fired $end
+$var reg 1 /% reset_vmem $end
+$var reg 1 -% spike $end
+$var reg 4 <% spike_id [3:0] $end
+$var reg 16 =% vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 >% vmem_in [15:0] $end
+$var reg 16 ?% leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 &% score_valid $end
+$var wire 5 @% score_in [4:0] $end
+$var reg 16 A% sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 B% corr [15:0] $end
+$var wire 16 C% fast_sum [15:0] $end
+$var wire 16 D% leak [15:0] $end
+$var wire 1 E% reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 F% vmem_next_ext [16:0] $end
+$var wire 16 G% vmem_next [15:0] $end
+$var reg 16 H% vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 %% fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 I% score_in [4:0] $end
+$var wire 1 J% score_valid $end
+$var wire 1 K% score_ready $end
+$var wire 1 &% fifo_valid $end
+$var wire 5 L% fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 M% in_data [4:0] $end
+$var wire 1 K% in_ready $end
+$var wire 1 J% in_valid $end
+$var wire 5 N% out_data [4:0] $end
+$var wire 1 %% out_ready $end
+$var wire 1 &% out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 O% data [4:0] $end
+$var reg 1 P% full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[5] $end
+$var wire 1 Q% ev_ready $end
+$var wire 1 R% ev_valid $end
+$var wire 5 S% ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 T% neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 U% spike_id [3:0] $end
+$var wire 1 Q% spike_ready $end
+$var wire 1 V% spike_valid $end
+$var wire 16 W% threshold [15:0] $end
+$var wire 16 X% vmem [15:0] $end
+$var wire 1 Y% spike_raw $end
+$var wire 1 R% score_valid $end
+$var wire 5 Z% score_in [4:0] $end
+$var wire 1 [% reset_vmem_from_fire $end
+$var wire 16 \% leak [15:0] $end
+$var wire 16 ]% fast_sum [15:0] $end
+$var wire 1 ^% corr_enable $end
+$var wire 16 _% corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 `% clear $end
+$var wire 1 # clk $end
+$var wire 1 ^% enable $end
+$var wire 8 a% frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 b% corr_out [15:0] $end
+$var reg 24 c% acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 d% neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 e% threshold [15:0] $end
+$var wire 16 f% vmem [15:0] $end
+$var reg 1 g% fired $end
+$var reg 1 [% reset_vmem $end
+$var reg 1 Y% spike $end
+$var reg 4 h% spike_id [3:0] $end
+$var reg 16 i% vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 j% vmem_in [15:0] $end
+$var reg 16 k% leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 R% score_valid $end
+$var wire 5 l% score_in [4:0] $end
+$var reg 16 m% sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 n% corr [15:0] $end
+$var wire 16 o% fast_sum [15:0] $end
+$var wire 16 p% leak [15:0] $end
+$var wire 1 q% reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 r% vmem_next_ext [16:0] $end
+$var wire 16 s% vmem_next [15:0] $end
+$var reg 16 t% vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 Q% fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 u% score_in [4:0] $end
+$var wire 1 v% score_valid $end
+$var wire 1 w% score_ready $end
+$var wire 1 R% fifo_valid $end
+$var wire 5 x% fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 y% in_data [4:0] $end
+$var wire 1 w% in_ready $end
+$var wire 1 v% in_valid $end
+$var wire 5 z% out_data [4:0] $end
+$var wire 1 Q% out_ready $end
+$var wire 1 R% out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 {% data [4:0] $end
+$var reg 1 |% full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[6] $end
+$var wire 1 }% ev_ready $end
+$var wire 1 ~% ev_valid $end
+$var wire 5 !& ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 "& neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 #& spike_id [3:0] $end
+$var wire 1 }% spike_ready $end
+$var wire 1 $& spike_valid $end
+$var wire 16 %& threshold [15:0] $end
+$var wire 16 && vmem [15:0] $end
+$var wire 1 '& spike_raw $end
+$var wire 1 ~% score_valid $end
+$var wire 5 (& score_in [4:0] $end
+$var wire 1 )& reset_vmem_from_fire $end
+$var wire 16 *& leak [15:0] $end
+$var wire 16 +& fast_sum [15:0] $end
+$var wire 1 ,& corr_enable $end
+$var wire 16 -& corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 .& clear $end
+$var wire 1 # clk $end
+$var wire 1 ,& enable $end
+$var wire 8 /& frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 0& corr_out [15:0] $end
+$var reg 24 1& acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 2& neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 3& threshold [15:0] $end
+$var wire 16 4& vmem [15:0] $end
+$var reg 1 5& fired $end
+$var reg 1 )& reset_vmem $end
+$var reg 1 '& spike $end
+$var reg 4 6& spike_id [3:0] $end
+$var reg 16 7& vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 8& vmem_in [15:0] $end
+$var reg 16 9& leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 ~% score_valid $end
+$var wire 5 :& score_in [4:0] $end
+$var reg 16 ;& sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 <& corr [15:0] $end
+$var wire 16 =& fast_sum [15:0] $end
+$var wire 16 >& leak [15:0] $end
+$var wire 1 ?& reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 @& vmem_next_ext [16:0] $end
+$var wire 16 A& vmem_next [15:0] $end
+$var reg 16 B& vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 }% fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 C& score_in [4:0] $end
+$var wire 1 D& score_valid $end
+$var wire 1 E& score_ready $end
+$var wire 1 ~% fifo_valid $end
+$var wire 5 F& fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 G& in_data [4:0] $end
+$var wire 1 E& in_ready $end
+$var wire 1 D& in_valid $end
+$var wire 5 H& out_data [4:0] $end
+$var wire 1 }% out_ready $end
+$var wire 1 ~% out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 I& data [4:0] $end
+$var reg 1 J& full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[7] $end
+$var wire 1 K& ev_ready $end
+$var wire 1 L& ev_valid $end
+$var wire 5 M& ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 N& neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 O& spike_id [3:0] $end
+$var wire 1 K& spike_ready $end
+$var wire 1 P& spike_valid $end
+$var wire 16 Q& threshold [15:0] $end
+$var wire 16 R& vmem [15:0] $end
+$var wire 1 S& spike_raw $end
+$var wire 1 L& score_valid $end
+$var wire 5 T& score_in [4:0] $end
+$var wire 1 U& reset_vmem_from_fire $end
+$var wire 16 V& leak [15:0] $end
+$var wire 16 W& fast_sum [15:0] $end
+$var wire 1 X& corr_enable $end
+$var wire 16 Y& corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 Z& clear $end
+$var wire 1 # clk $end
+$var wire 1 X& enable $end
+$var wire 8 [& frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 \& corr_out [15:0] $end
+$var reg 24 ]& acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 ^& neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 _& threshold [15:0] $end
+$var wire 16 `& vmem [15:0] $end
+$var reg 1 a& fired $end
+$var reg 1 U& reset_vmem $end
+$var reg 1 S& spike $end
+$var reg 4 b& spike_id [3:0] $end
+$var reg 16 c& vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 d& vmem_in [15:0] $end
+$var reg 16 e& leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 L& score_valid $end
+$var wire 5 f& score_in [4:0] $end
+$var reg 16 g& sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 h& corr [15:0] $end
+$var wire 16 i& fast_sum [15:0] $end
+$var wire 16 j& leak [15:0] $end
+$var wire 1 k& reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 l& vmem_next_ext [16:0] $end
+$var wire 16 m& vmem_next [15:0] $end
+$var reg 16 n& vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 K& fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 o& score_in [4:0] $end
+$var wire 1 p& score_valid $end
+$var wire 1 q& score_ready $end
+$var wire 1 L& fifo_valid $end
+$var wire 5 r& fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 s& in_data [4:0] $end
+$var wire 1 q& in_ready $end
+$var wire 1 p& in_valid $end
+$var wire 5 t& out_data [4:0] $end
+$var wire 1 K& out_ready $end
+$var wire 1 L& out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 u& data [4:0] $end
+$var reg 1 v& full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[8] $end
+$var wire 1 w& ev_ready $end
+$var wire 1 x& ev_valid $end
+$var wire 5 y& ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 z& neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 {& spike_id [3:0] $end
+$var wire 1 w& spike_ready $end
+$var wire 1 |& spike_valid $end
+$var wire 16 }& threshold [15:0] $end
+$var wire 16 ~& vmem [15:0] $end
+$var wire 1 !' spike_raw $end
+$var wire 1 x& score_valid $end
+$var wire 5 "' score_in [4:0] $end
+$var wire 1 #' reset_vmem_from_fire $end
+$var wire 16 $' leak [15:0] $end
+$var wire 16 %' fast_sum [15:0] $end
+$var wire 1 &' corr_enable $end
+$var wire 16 '' corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 (' clear $end
+$var wire 1 # clk $end
+$var wire 1 &' enable $end
+$var wire 8 )' frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 *' corr_out [15:0] $end
+$var reg 24 +' acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 ,' neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 -' threshold [15:0] $end
+$var wire 16 .' vmem [15:0] $end
+$var reg 1 /' fired $end
+$var reg 1 #' reset_vmem $end
+$var reg 1 !' spike $end
+$var reg 4 0' spike_id [3:0] $end
+$var reg 16 1' vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 2' vmem_in [15:0] $end
+$var reg 16 3' leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 x& score_valid $end
+$var wire 5 4' score_in [4:0] $end
+$var reg 16 5' sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 6' corr [15:0] $end
+$var wire 16 7' fast_sum [15:0] $end
+$var wire 16 8' leak [15:0] $end
+$var wire 1 9' reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 :' vmem_next_ext [16:0] $end
+$var wire 16 ;' vmem_next [15:0] $end
+$var reg 16 <' vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 w& fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 =' score_in [4:0] $end
+$var wire 1 >' score_valid $end
+$var wire 1 ?' score_ready $end
+$var wire 1 x& fifo_valid $end
+$var wire 5 @' fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 A' in_data [4:0] $end
+$var wire 1 ?' in_ready $end
+$var wire 1 >' in_valid $end
+$var wire 5 B' out_data [4:0] $end
+$var wire 1 w& out_ready $end
+$var wire 1 x& out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 C' data [4:0] $end
+$var reg 1 D' full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[9] $end
+$var wire 1 E' ev_ready $end
+$var wire 1 F' ev_valid $end
+$var wire 5 G' ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 H' neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 I' spike_id [3:0] $end
+$var wire 1 E' spike_ready $end
+$var wire 1 J' spike_valid $end
+$var wire 16 K' threshold [15:0] $end
+$var wire 16 L' vmem [15:0] $end
+$var wire 1 M' spike_raw $end
+$var wire 1 F' score_valid $end
+$var wire 5 N' score_in [4:0] $end
+$var wire 1 O' reset_vmem_from_fire $end
+$var wire 16 P' leak [15:0] $end
+$var wire 16 Q' fast_sum [15:0] $end
+$var wire 1 R' corr_enable $end
+$var wire 16 S' corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 T' clear $end
+$var wire 1 # clk $end
+$var wire 1 R' enable $end
+$var wire 8 U' frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 V' corr_out [15:0] $end
+$var reg 24 W' acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 X' neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 Y' threshold [15:0] $end
+$var wire 16 Z' vmem [15:0] $end
+$var reg 1 [' fired $end
+$var reg 1 O' reset_vmem $end
+$var reg 1 M' spike $end
+$var reg 4 \' spike_id [3:0] $end
+$var reg 16 ]' vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 ^' vmem_in [15:0] $end
+$var reg 16 _' leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 F' score_valid $end
+$var wire 5 `' score_in [4:0] $end
+$var reg 16 a' sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 b' corr [15:0] $end
+$var wire 16 c' fast_sum [15:0] $end
+$var wire 16 d' leak [15:0] $end
+$var wire 1 e' reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 f' vmem_next_ext [16:0] $end
+$var wire 16 g' vmem_next [15:0] $end
+$var reg 16 h' vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 E' fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 i' score_in [4:0] $end
+$var wire 1 j' score_valid $end
+$var wire 1 k' score_ready $end
+$var wire 1 F' fifo_valid $end
+$var wire 5 l' fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 m' in_data [4:0] $end
+$var wire 1 k' in_ready $end
+$var wire 1 j' in_valid $end
+$var wire 5 n' out_data [4:0] $end
+$var wire 1 E' out_ready $end
+$var wire 1 F' out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 o' data [4:0] $end
+$var reg 1 p' full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[10] $end
+$var wire 1 q' ev_ready $end
+$var wire 1 r' ev_valid $end
+$var wire 5 s' ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 t' neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 u' spike_id [3:0] $end
+$var wire 1 q' spike_ready $end
+$var wire 1 v' spike_valid $end
+$var wire 16 w' threshold [15:0] $end
+$var wire 16 x' vmem [15:0] $end
+$var wire 1 y' spike_raw $end
+$var wire 1 r' score_valid $end
+$var wire 5 z' score_in [4:0] $end
+$var wire 1 {' reset_vmem_from_fire $end
+$var wire 16 |' leak [15:0] $end
+$var wire 16 }' fast_sum [15:0] $end
+$var wire 1 ~' corr_enable $end
+$var wire 16 !( corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 "( clear $end
+$var wire 1 # clk $end
+$var wire 1 ~' enable $end
+$var wire 8 #( frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 $( corr_out [15:0] $end
+$var reg 24 %( acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 &( neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 '( threshold [15:0] $end
+$var wire 16 (( vmem [15:0] $end
+$var reg 1 )( fired $end
+$var reg 1 {' reset_vmem $end
+$var reg 1 y' spike $end
+$var reg 4 *( spike_id [3:0] $end
+$var reg 16 +( vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 ,( vmem_in [15:0] $end
+$var reg 16 -( leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 r' score_valid $end
+$var wire 5 .( score_in [4:0] $end
+$var reg 16 /( sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 0( corr [15:0] $end
+$var wire 16 1( fast_sum [15:0] $end
+$var wire 16 2( leak [15:0] $end
+$var wire 1 3( reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 4( vmem_next_ext [16:0] $end
+$var wire 16 5( vmem_next [15:0] $end
+$var reg 16 6( vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 q' fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 7( score_in [4:0] $end
+$var wire 1 8( score_valid $end
+$var wire 1 9( score_ready $end
+$var wire 1 r' fifo_valid $end
+$var wire 5 :( fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 ;( in_data [4:0] $end
+$var wire 1 9( in_ready $end
+$var wire 1 8( in_valid $end
+$var wire 5 <( out_data [4:0] $end
+$var wire 1 q' out_ready $end
+$var wire 1 r' out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 =( data [4:0] $end
+$var reg 1 >( full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[11] $end
+$var wire 1 ?( ev_ready $end
+$var wire 1 @( ev_valid $end
+$var wire 5 A( ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 B( neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 C( spike_id [3:0] $end
+$var wire 1 ?( spike_ready $end
+$var wire 1 D( spike_valid $end
+$var wire 16 E( threshold [15:0] $end
+$var wire 16 F( vmem [15:0] $end
+$var wire 1 G( spike_raw $end
+$var wire 1 @( score_valid $end
+$var wire 5 H( score_in [4:0] $end
+$var wire 1 I( reset_vmem_from_fire $end
+$var wire 16 J( leak [15:0] $end
+$var wire 16 K( fast_sum [15:0] $end
+$var wire 1 L( corr_enable $end
+$var wire 16 M( corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 N( clear $end
+$var wire 1 # clk $end
+$var wire 1 L( enable $end
+$var wire 8 O( frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 P( corr_out [15:0] $end
+$var reg 24 Q( acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 R( neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 S( threshold [15:0] $end
+$var wire 16 T( vmem [15:0] $end
+$var reg 1 U( fired $end
+$var reg 1 I( reset_vmem $end
+$var reg 1 G( spike $end
+$var reg 4 V( spike_id [3:0] $end
+$var reg 16 W( vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 X( vmem_in [15:0] $end
+$var reg 16 Y( leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 @( score_valid $end
+$var wire 5 Z( score_in [4:0] $end
+$var reg 16 [( sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 \( corr [15:0] $end
+$var wire 16 ]( fast_sum [15:0] $end
+$var wire 16 ^( leak [15:0] $end
+$var wire 1 _( reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 `( vmem_next_ext [16:0] $end
+$var wire 16 a( vmem_next [15:0] $end
+$var reg 16 b( vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 ?( fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 c( score_in [4:0] $end
+$var wire 1 d( score_valid $end
+$var wire 1 e( score_ready $end
+$var wire 1 @( fifo_valid $end
+$var wire 5 f( fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 g( in_data [4:0] $end
+$var wire 1 e( in_ready $end
+$var wire 1 d( in_valid $end
+$var wire 5 h( out_data [4:0] $end
+$var wire 1 ?( out_ready $end
+$var wire 1 @( out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 i( data [4:0] $end
+$var reg 1 j( full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[12] $end
+$var wire 1 k( ev_ready $end
+$var wire 1 l( ev_valid $end
+$var wire 5 m( ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 n( neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 o( spike_id [3:0] $end
+$var wire 1 k( spike_ready $end
+$var wire 1 p( spike_valid $end
+$var wire 16 q( threshold [15:0] $end
+$var wire 16 r( vmem [15:0] $end
+$var wire 1 s( spike_raw $end
+$var wire 1 l( score_valid $end
+$var wire 5 t( score_in [4:0] $end
+$var wire 1 u( reset_vmem_from_fire $end
+$var wire 16 v( leak [15:0] $end
+$var wire 16 w( fast_sum [15:0] $end
+$var wire 1 x( corr_enable $end
+$var wire 16 y( corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 z( clear $end
+$var wire 1 # clk $end
+$var wire 1 x( enable $end
+$var wire 8 {( frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 |( corr_out [15:0] $end
+$var reg 24 }( acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 ~( neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 !) threshold [15:0] $end
+$var wire 16 ") vmem [15:0] $end
+$var reg 1 #) fired $end
+$var reg 1 u( reset_vmem $end
+$var reg 1 s( spike $end
+$var reg 4 $) spike_id [3:0] $end
+$var reg 16 %) vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 &) vmem_in [15:0] $end
+$var reg 16 ') leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 l( score_valid $end
+$var wire 5 () score_in [4:0] $end
+$var reg 16 )) sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 *) corr [15:0] $end
+$var wire 16 +) fast_sum [15:0] $end
+$var wire 16 ,) leak [15:0] $end
+$var wire 1 -) reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 .) vmem_next_ext [16:0] $end
+$var wire 16 /) vmem_next [15:0] $end
+$var reg 16 0) vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 k( fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 1) score_in [4:0] $end
+$var wire 1 2) score_valid $end
+$var wire 1 3) score_ready $end
+$var wire 1 l( fifo_valid $end
+$var wire 5 4) fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 5) in_data [4:0] $end
+$var wire 1 3) in_ready $end
+$var wire 1 2) in_valid $end
+$var wire 5 6) out_data [4:0] $end
+$var wire 1 k( out_ready $end
+$var wire 1 l( out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 7) data [4:0] $end
+$var reg 1 8) full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[13] $end
+$var wire 1 9) ev_ready $end
+$var wire 1 :) ev_valid $end
+$var wire 5 ;) ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 <) neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 =) spike_id [3:0] $end
+$var wire 1 9) spike_ready $end
+$var wire 1 >) spike_valid $end
+$var wire 16 ?) threshold [15:0] $end
+$var wire 16 @) vmem [15:0] $end
+$var wire 1 A) spike_raw $end
+$var wire 1 :) score_valid $end
+$var wire 5 B) score_in [4:0] $end
+$var wire 1 C) reset_vmem_from_fire $end
+$var wire 16 D) leak [15:0] $end
+$var wire 16 E) fast_sum [15:0] $end
+$var wire 1 F) corr_enable $end
+$var wire 16 G) corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 H) clear $end
+$var wire 1 # clk $end
+$var wire 1 F) enable $end
+$var wire 8 I) frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 J) corr_out [15:0] $end
+$var reg 24 K) acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 L) neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 M) threshold [15:0] $end
+$var wire 16 N) vmem [15:0] $end
+$var reg 1 O) fired $end
+$var reg 1 C) reset_vmem $end
+$var reg 1 A) spike $end
+$var reg 4 P) spike_id [3:0] $end
+$var reg 16 Q) vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 R) vmem_in [15:0] $end
+$var reg 16 S) leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 :) score_valid $end
+$var wire 5 T) score_in [4:0] $end
+$var reg 16 U) sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 V) corr [15:0] $end
+$var wire 16 W) fast_sum [15:0] $end
+$var wire 16 X) leak [15:0] $end
+$var wire 1 Y) reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 Z) vmem_next_ext [16:0] $end
+$var wire 16 [) vmem_next [15:0] $end
+$var reg 16 \) vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 9) fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 ]) score_in [4:0] $end
+$var wire 1 ^) score_valid $end
+$var wire 1 _) score_ready $end
+$var wire 1 :) fifo_valid $end
+$var wire 5 `) fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 a) in_data [4:0] $end
+$var wire 1 _) in_ready $end
+$var wire 1 ^) in_valid $end
+$var wire 5 b) out_data [4:0] $end
+$var wire 1 9) out_ready $end
+$var wire 1 :) out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 c) data [4:0] $end
+$var reg 1 d) full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[14] $end
+$var wire 1 e) ev_ready $end
+$var wire 1 f) ev_valid $end
+$var wire 5 g) ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 h) neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 i) spike_id [3:0] $end
+$var wire 1 e) spike_ready $end
+$var wire 1 j) spike_valid $end
+$var wire 16 k) threshold [15:0] $end
+$var wire 16 l) vmem [15:0] $end
+$var wire 1 m) spike_raw $end
+$var wire 1 f) score_valid $end
+$var wire 5 n) score_in [4:0] $end
+$var wire 1 o) reset_vmem_from_fire $end
+$var wire 16 p) leak [15:0] $end
+$var wire 16 q) fast_sum [15:0] $end
+$var wire 1 r) corr_enable $end
+$var wire 16 s) corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 t) clear $end
+$var wire 1 # clk $end
+$var wire 1 r) enable $end
+$var wire 8 u) frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 v) corr_out [15:0] $end
+$var reg 24 w) acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 x) neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 y) threshold [15:0] $end
+$var wire 16 z) vmem [15:0] $end
+$var reg 1 {) fired $end
+$var reg 1 o) reset_vmem $end
+$var reg 1 m) spike $end
+$var reg 4 |) spike_id [3:0] $end
+$var reg 16 }) vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 ~) vmem_in [15:0] $end
+$var reg 16 !* leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 f) score_valid $end
+$var wire 5 "* score_in [4:0] $end
+$var reg 16 #* sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 $* corr [15:0] $end
+$var wire 16 %* fast_sum [15:0] $end
+$var wire 16 &* leak [15:0] $end
+$var wire 1 '* reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 (* vmem_next_ext [16:0] $end
+$var wire 16 )* vmem_next [15:0] $end
+$var reg 16 ** vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 e) fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 +* score_in [4:0] $end
+$var wire 1 ,* score_valid $end
+$var wire 1 -* score_ready $end
+$var wire 1 f) fifo_valid $end
+$var wire 5 .* fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 /* in_data [4:0] $end
+$var wire 1 -* in_ready $end
+$var wire 1 ,* in_valid $end
+$var wire 5 0* out_data [4:0] $end
+$var wire 1 e) out_ready $end
+$var wire 1 f) out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 1* data [4:0] $end
+$var reg 1 2* full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin LIF_GEN[15] $end
+$var wire 1 3* ev_ready $end
+$var wire 1 4* ev_valid $end
+$var wire 5 5* ev_score [4:0] $end
+$scope module lif $end
+$var wire 1 # clk $end
+$var wire 4 6* neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 4 7* spike_id [3:0] $end
+$var wire 1 3* spike_ready $end
+$var wire 1 8* spike_valid $end
+$var wire 16 9* threshold [15:0] $end
+$var wire 16 :* vmem [15:0] $end
+$var wire 1 ;* spike_raw $end
+$var wire 1 4* score_valid $end
+$var wire 5 <* score_in [4:0] $end
+$var wire 1 =* reset_vmem_from_fire $end
+$var wire 16 >* leak [15:0] $end
+$var wire 16 ?* fast_sum [15:0] $end
+$var wire 1 @* corr_enable $end
+$var wire 16 A* corr [15:0] $end
+$scope module u_corr $end
+$var wire 1 B* clear $end
+$var wire 1 # clk $end
+$var wire 1 @* enable $end
+$var wire 8 C* frac_in [7:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 D* corr_out [15:0] $end
+$var reg 24 E* acc [23:0] $end
+$upscope $end
+$scope module u_fire $end
+$var wire 1 # clk $end
+$var wire 4 F* neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 16 G* threshold [15:0] $end
+$var wire 16 H* vmem [15:0] $end
+$var reg 1 I* fired $end
+$var reg 1 =* reset_vmem $end
+$var reg 1 ;* spike $end
+$var reg 4 J* spike_id [3:0] $end
+$var reg 16 K* vmem_prev [15:0] $end
+$upscope $end
+$scope module u_leak $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 16 L* vmem_in [15:0] $end
+$var reg 16 M* leak_out [15:0] $end
+$upscope $end
+$scope module u_score_acc $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var wire 1 4* score_valid $end
+$var wire 5 N* score_in [4:0] $end
+$var reg 16 O* sum_out [15:0] $end
+$upscope $end
+$scope module u_vmem $end
+$var wire 1 # clk $end
+$var wire 16 P* corr [15:0] $end
+$var wire 16 Q* fast_sum [15:0] $end
+$var wire 16 R* leak [15:0] $end
+$var wire 1 S* reset_scan $end
+$var wire 1 ( rst_n $end
+$var wire 17 T* vmem_next_ext [16:0] $end
+$var wire 16 U* vmem_next [15:0] $end
+$var reg 16 V* vmem [15:0] $end
+$upscope $end
+$upscope $end
+$scope module u_event_fifo $end
+$var wire 1 # clk $end
+$var wire 1 3* fifo_ready $end
+$var wire 1 ( rst_n $end
+$var wire 5 W* score_in [4:0] $end
+$var wire 1 X* score_valid $end
+$var wire 1 Y* score_ready $end
+$var wire 1 4* fifo_valid $end
+$var wire 5 Z* fifo_score [4:0] $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 5 [* in_data [4:0] $end
+$var wire 1 Y* in_ready $end
+$var wire 1 X* in_valid $end
+$var wire 5 \* out_data [4:0] $end
+$var wire 1 3* out_ready $end
+$var wire 1 4* out_valid $end
+$var wire 1 ( rst_n $end
+$var reg 5 ]* data [4:0] $end
+$var reg 1 ^* full $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module u_part_a $end
+$var wire 1 # clk $end
+$var wire 4 _* col_base [3:0] $end
+$var wire 1 % enable $end
+$var wire 1 `* fifo_ready $end
+$var wire 5 a* intersection_threshold [4:0] $end
+$var wire 4 b* neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 1 ) spike_in $end
+$var wire 64 c* weight_patterns [63:0] $end
+$var wire 1 - weight_valid $end
+$var wire 16 d* spike_pattern [15:0] $end
+$var wire 1 e* ij_valid $end
+$var wire 5 f* ij_score [4:0] $end
+$var wire 1 g* ij_ready $end
+$var wire 4 h* ij_neuron [3:0] $end
+$var wire 4 i* ij_col [3:0] $end
+$var wire 1 < cand_valid $end
+$var wire 5 j* cand_score [4:0] $end
+$var wire 4 k* cand_neuron [3:0] $end
+$var wire 4 l* cand_col [3:0] $end
+$scope module u_compressor $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 ) spike_in $end
+$var reg 16 m* compressed_pattern [15:0] $end
+$upscope $end
+$scope module u_fifo $end
+$var wire 1 # clk $end
+$var wire 1 `* out_ready $end
+$var wire 1 ( rst_n $end
+$var wire 1 e* in_valid $end
+$var wire 5 n* in_score [4:0] $end
+$var wire 1 g* in_ready $end
+$var wire 4 o* in_neuron [3:0] $end
+$var wire 4 p* in_col [3:0] $end
+$var reg 4 q* out_col [3:0] $end
+$var reg 4 r* out_neuron [3:0] $end
+$var reg 5 s* out_score [4:0] $end
+$var reg 1 < out_valid $end
+$var reg 4 t* rp [3:0] $end
+$var reg 4 u* wp [3:0] $end
+$upscope $end
+$scope module u_inner_join $end
+$var wire 1 # clk $end
+$var wire 4 v* col_base [3:0] $end
+$var wire 1 % enable $end
+$var wire 1 g* fifo_ready $end
+$var wire 5 w* intersection_threshold [4:0] $end
+$var wire 4 x* neuron_id [3:0] $end
+$var wire 1 ( rst_n $end
+$var wire 16 y* spike_pattern [15:0] $end
+$var wire 64 z* weight_patterns [63:0] $end
+$var wire 1 - weight_valid $end
+$var wire 20 {* score [19:0] $end
+$var wire 4 |* hit [3:0] $end
+$var reg 4 }* fifo_col [3:0] $end
+$var reg 4 ~* fifo_neuron [3:0] $end
+$var reg 5 !+ fifo_score [4:0] $end
+$var reg 1 e* fifo_valid $end
+$var reg 1 "+ found $end
+$var integer 32 #+ k [31:0] $end
+$scope begin PM_GEN[0] $end
+$scope module pm $end
+$var wire 16 $+ input_pattern [15:0] $end
+$var wire 16 %+ match_bits [15:0] $end
+$var wire 16 &+ weight_pattern [15:0] $end
+$var wire 5 '+ match_score [4:0] $end
+$var reg 5 (+ sum [4:0] $end
+$var integer 32 )+ i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin PM_GEN[1] $end
+$scope module pm $end
+$var wire 16 *+ input_pattern [15:0] $end
+$var wire 16 ++ match_bits [15:0] $end
+$var wire 16 ,+ weight_pattern [15:0] $end
+$var wire 5 -+ match_score [4:0] $end
+$var reg 5 .+ sum [4:0] $end
+$var integer 32 /+ i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin PM_GEN[2] $end
+$scope module pm $end
+$var wire 16 0+ input_pattern [15:0] $end
+$var wire 16 1+ match_bits [15:0] $end
+$var wire 16 2+ weight_pattern [15:0] $end
+$var wire 5 3+ match_score [4:0] $end
+$var reg 5 4+ sum [4:0] $end
+$var integer 32 5+ i [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin PM_GEN[3] $end
+$scope module pm $end
+$var wire 16 6+ input_pattern [15:0] $end
+$var wire 16 7+ match_bits [15:0] $end
+$var wire 16 8+ weight_pattern [15:0] $end
+$var wire 5 9+ match_score [4:0] $end
+$var reg 5 :+ sum [4:0] $end
+$var integer 32 ;+ i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module u_router $end
+$var wire 4 <+ cand_neuron [3:0] $end
+$var wire 5 =+ cand_score [4:0] $end
+$var wire 1 < cand_valid $end
+$var wire 1 # clk $end
+$var wire 1 ( rst_n $end
+$var wire 1 A scan_start_en $end
+$var reg 80 >+ lif_score [79:0] $end
+$var reg 16 ?+ lif_score_valid [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 ?+
+b0 >+
+bx =+
+bx <+
+b10000 ;+
+b0 :+
+b0 9+
+b0 8+
+b0 7+
+b0 6+
+b10000 5+
+b0 4+
+b0 3+
+b0 2+
+b0 1+
+b0 0+
+b10000 /+
+b0 .+
+b0 -+
+b0 ,+
+b0 ++
+b0 *+
+b10000 )+
+b0 (+
+b0 '+
+b0 &+
+b0 %+
+b0 $+
+bx #+
+0"+
+bx !+
+bx ~*
+bx }*
+b0 |*
+b0 {*
+b0 z*
+b0 y*
+b0 x*
+b11 w*
+b0 v*
+b0 u*
+b0 t*
+bx s*
+bx r*
+bx q*
+bx p*
+bx o*
+bx n*
+b0 m*
+bx l*
+bx k*
+bx j*
+bx i*
+bx h*
+1g*
+bx f*
+0e*
+b0 d*
+b0 c*
+b0 b*
+b11 a*
+1`*
+b0 _*
+0^*
+bx ]*
+bx \*
+b0 [*
+bx Z*
+1Y*
+0X*
+b0 W*
+b0 V*
+b0 U*
+b0 T*
+0S*
+b0 R*
+b0 Q*
+b0 P*
+b0 O*
+bx N*
+b0 M*
+b0 L*
+b0 K*
+bx J*
+0I*
+b0 H*
+b1111101000 G*
+b1111 F*
+b0 E*
+b0 D*
+b0 C*
+0B*
+b0 A*
+0@*
+b0 ?*
+b0 >*
+0=*
+bx <*
+0;*
+b0 :*
+b1111101000 9*
+08*
+b1111 7*
+b1111 6*
+bx 5*
+04*
+z3*
+02*
+bx 1*
+bx 0*
+b0 /*
+bx .*
+1-*
+0,*
+b0 +*
+b0 **
+b0 )*
+b0 (*
+0'*
+b0 &*
+b0 %*
+b0 $*
+b0 #*
+bx "*
+b0 !*
+b0 ~)
+b0 })
+bx |)
+0{)
+b0 z)
+b1111101000 y)
+b1110 x)
+b0 w)
+b0 v)
+b0 u)
+0t)
+b0 s)
+0r)
+b0 q)
+b0 p)
+0o)
+bx n)
+0m)
+b0 l)
+b1111101000 k)
+0j)
+b1110 i)
+b1110 h)
+bx g)
+0f)
+ze)
+0d)
+bx c)
+bx b)
+b0 a)
+bx `)
+1_)
+0^)
+b0 ])
+b0 \)
+b0 [)
+b0 Z)
+0Y)
+b0 X)
+b0 W)
+b0 V)
+b0 U)
+bx T)
+b0 S)
+b0 R)
+b0 Q)
+bx P)
+0O)
+b0 N)
+b1111101000 M)
+b1101 L)
+b0 K)
+b0 J)
+b0 I)
+0H)
+b0 G)
+0F)
+b0 E)
+b0 D)
+0C)
+bx B)
+0A)
+b0 @)
+b1111101000 ?)
+0>)
+b1101 =)
+b1101 <)
+bx ;)
+0:)
+z9)
+08)
+bx 7)
+bx 6)
+b0 5)
+bx 4)
+13)
+02)
+b0 1)
+b0 0)
+b0 /)
+b0 .)
+0-)
+b0 ,)
+b0 +)
+b0 *)
+b0 ))
+bx ()
+b0 ')
+b0 &)
+b0 %)
+bx $)
+0#)
+b0 ")
+b1111101000 !)
+b1100 ~(
+b0 }(
+b0 |(
+b0 {(
+0z(
+b0 y(
+0x(
+b0 w(
+b0 v(
+0u(
+bx t(
+0s(
+b0 r(
+b1111101000 q(
+0p(
+b1100 o(
+b1100 n(
+bx m(
+0l(
+zk(
+0j(
+bx i(
+bx h(
+b0 g(
+bx f(
+1e(
+0d(
+b0 c(
+b0 b(
+b0 a(
+b0 `(
+0_(
+b0 ^(
+b0 ](
+b0 \(
+b0 [(
+bx Z(
+b0 Y(
+b0 X(
+b0 W(
+bx V(
+0U(
+b0 T(
+b1111101000 S(
+b1011 R(
+b0 Q(
+b0 P(
+b0 O(
+0N(
+b0 M(
+0L(
+b0 K(
+b0 J(
+0I(
+bx H(
+0G(
+b0 F(
+b1111101000 E(
+0D(
+b1011 C(
+b1011 B(
+bx A(
+0@(
+z?(
+0>(
+bx =(
+bx <(
+b0 ;(
+bx :(
+19(
+08(
+b0 7(
+b0 6(
+b0 5(
+b0 4(
+03(
+b0 2(
+b0 1(
+b0 0(
+b0 /(
+bx .(
+b0 -(
+b0 ,(
+b0 +(
+bx *(
+0)(
+b0 ((
+b1111101000 '(
+b1010 &(
+b0 %(
+b0 $(
+b0 #(
+0"(
+b0 !(
+0~'
+b0 }'
+b0 |'
+0{'
+bx z'
+0y'
+b0 x'
+b1111101000 w'
+0v'
+b1010 u'
+b1010 t'
+bx s'
+0r'
+zq'
+0p'
+bx o'
+bx n'
+b0 m'
+bx l'
+1k'
+0j'
+b0 i'
+b0 h'
+b0 g'
+b0 f'
+0e'
+b0 d'
+b0 c'
+b0 b'
+b0 a'
+bx `'
+b0 _'
+b0 ^'
+b0 ]'
+bx \'
+0['
+b0 Z'
+b1111101000 Y'
+b1001 X'
+b0 W'
+b0 V'
+b0 U'
+0T'
+b0 S'
+0R'
+b0 Q'
+b0 P'
+0O'
+bx N'
+0M'
+b0 L'
+b1111101000 K'
+0J'
+b1001 I'
+b1001 H'
+bx G'
+0F'
+zE'
+0D'
+bx C'
+bx B'
+b0 A'
+bx @'
+1?'
+0>'
+b0 ='
+b0 <'
+b0 ;'
+b0 :'
+09'
+b0 8'
+b0 7'
+b0 6'
+b0 5'
+bx 4'
+b0 3'
+b0 2'
+b0 1'
+bx 0'
+0/'
+b0 .'
+b1111101000 -'
+b1000 ,'
+b0 +'
+b0 *'
+b0 )'
+0('
+b0 ''
+0&'
+b0 %'
+b0 $'
+0#'
+bx "'
+0!'
+b0 ~&
+b1111101000 }&
+0|&
+b1000 {&
+b1000 z&
+bx y&
+0x&
+zw&
+0v&
+bx u&
+bx t&
+b0 s&
+bx r&
+1q&
+0p&
+b0 o&
+b0 n&
+b0 m&
+b0 l&
+0k&
+b0 j&
+b0 i&
+b0 h&
+b0 g&
+bx f&
+b0 e&
+b0 d&
+b0 c&
+bx b&
+0a&
+b0 `&
+b1111101000 _&
+b111 ^&
+b0 ]&
+b0 \&
+b0 [&
+0Z&
+b0 Y&
+0X&
+b0 W&
+b0 V&
+0U&
+bx T&
+0S&
+b0 R&
+b1111101000 Q&
+0P&
+b111 O&
+b111 N&
+bx M&
+0L&
+zK&
+0J&
+bx I&
+bx H&
+b0 G&
+bx F&
+1E&
+0D&
+b0 C&
+b0 B&
+b0 A&
+b0 @&
+0?&
+b0 >&
+b0 =&
+b0 <&
+b0 ;&
+bx :&
+b0 9&
+b0 8&
+b0 7&
+bx 6&
+05&
+b0 4&
+b1111101000 3&
+b110 2&
+b0 1&
+b0 0&
+b0 /&
+0.&
+b0 -&
+0,&
+b0 +&
+b0 *&
+0)&
+bx (&
+0'&
+b0 &&
+b1111101000 %&
+0$&
+b110 #&
+b110 "&
+bx !&
+0~%
+z}%
+0|%
+bx {%
+bx z%
+b0 y%
+bx x%
+1w%
+0v%
+b0 u%
+b0 t%
+b0 s%
+b0 r%
+0q%
+b0 p%
+b0 o%
+b0 n%
+b0 m%
+bx l%
+b0 k%
+b0 j%
+b0 i%
+bx h%
+0g%
+b0 f%
+b1111101000 e%
+b101 d%
+b0 c%
+b0 b%
+b0 a%
+0`%
+b0 _%
+0^%
+b0 ]%
+b0 \%
+0[%
+bx Z%
+0Y%
+b0 X%
+b1111101000 W%
+0V%
+b101 U%
+b101 T%
+bx S%
+0R%
+zQ%
+0P%
+bx O%
+bx N%
+b0 M%
+bx L%
+1K%
+0J%
+b0 I%
+b0 H%
+b0 G%
+b0 F%
+0E%
+b0 D%
+b0 C%
+b0 B%
+b0 A%
+bx @%
+b0 ?%
+b0 >%
+b0 =%
+bx <%
+0;%
+b0 :%
+b1111101000 9%
+b100 8%
+b0 7%
+b0 6%
+b0 5%
+04%
+b0 3%
+02%
+b0 1%
+b0 0%
+0/%
+bx .%
+0-%
+b0 ,%
+b1111101000 +%
+0*%
+b100 )%
+b100 (%
+bx '%
+0&%
+z%%
+0$%
+bx #%
+bx "%
+b0 !%
+bx ~$
+1}$
+0|$
+b0 {$
+b0 z$
+b0 y$
+b0 x$
+0w$
+b0 v$
+b0 u$
+b0 t$
+b0 s$
+bx r$
+b0 q$
+b0 p$
+b0 o$
+bx n$
+0m$
+b0 l$
+b1111101000 k$
+b11 j$
+b0 i$
+b0 h$
+b0 g$
+0f$
+b0 e$
+0d$
+b0 c$
+b0 b$
+0a$
+bx `$
+0_$
+b0 ^$
+b1111101000 ]$
+0\$
+b11 [$
+b11 Z$
+bx Y$
+0X$
+zW$
+0V$
+bx U$
+bx T$
+b0 S$
+bx R$
+1Q$
+0P$
+b0 O$
+b0 N$
+b0 M$
+b0 L$
+0K$
+b0 J$
+b0 I$
+b0 H$
+b0 G$
+bx F$
+b0 E$
+b0 D$
+b0 C$
+bx B$
+0A$
+b0 @$
+b110010 ?$
+b10 >$
+b0 =$
+b0 <$
+b0 ;$
+0:$
+b0 9$
+08$
+b0 7$
+b0 6$
+05$
+bx 4$
+03$
+b0 2$
+b110010 1$
+00$
+b10 /$
+b10 .$
+bx -$
+0,$
+z+$
+0*$
+bx )$
+bx ($
+b0 '$
+bx &$
+1%$
+0$$
+b0 #$
+b0 "$
+b0 !$
+b0 ~#
+0}#
+b0 |#
+b0 {#
+b0 z#
+b0 y#
+bx x#
+b0 w#
+b0 v#
+b0 u#
+bx t#
+0s#
+b0 r#
+b11110 q#
+b1 p#
+b0 o#
+b0 n#
+b0 m#
+0l#
+b0 k#
+0j#
+b0 i#
+b0 h#
+0g#
+bx f#
+0e#
+b0 d#
+b11110 c#
+0b#
+b1 a#
+b1 `#
+bx _#
+0^#
+z]#
+0\#
+bx [#
+bx Z#
+b0 Y#
+bx X#
+1W#
+0V#
+b0 U#
+b0 T#
+b0 S#
+b0 R#
+0Q#
+b0 P#
+b0 O#
+b0 N#
+b0 M#
+bx L#
+b0 K#
+b0 J#
+b0 I#
+bx H#
+0G#
+b0 F#
+b10100 E#
+b0 D#
+b0 C#
+b0 B#
+b0 A#
+0@#
+b0 ?#
+0>#
+b0 =#
+b0 <#
+0;#
+bx :#
+09#
+b0 8#
+b10100 7#
+06#
+b0 5#
+b0 4#
+bx 3#
+02#
+z1#
+b0 0#
+b0 /#
+b0 .#
+b1111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000000011001000000000000111100000000000010100 -#
+b0 ,#
+b10001 +#
+b0 *#
+b0 )#
+b0 (#
+0'#
+b0 &#
+0%#
+bx $#
+bx ##
+b1111 "#
+bx !#
+1~"
+0}"
+0|"
+b1111 {"
+0z"
+0y"
+bx x"
+bx w"
+b1110 v"
+bx u"
+1t"
+0s"
+0r"
+b1110 q"
+0p"
+0o"
+bx n"
+bx m"
+b1101 l"
+bx k"
+1j"
+0i"
+0h"
+b1101 g"
+0f"
+0e"
+bx d"
+bx c"
+b1100 b"
+bx a"
+1`"
+0_"
+0^"
+b1100 ]"
+0\"
+0["
+bx Z"
+bx Y"
+b1011 X"
+bx W"
+1V"
+0U"
+0T"
+b1011 S"
+0R"
+0Q"
+bx P"
+bx O"
+b1010 N"
+bx M"
+1L"
+0K"
+0J"
+b1010 I"
+0H"
+0G"
+bx F"
+bx E"
+b1001 D"
+bx C"
+1B"
+0A"
+0@"
+b1001 ?"
+0>"
+0="
+bx <"
+bx ;"
+b1000 :"
+bx 9"
+18"
+07"
+06"
+b1000 5"
+04"
+03"
+bx 2"
+bx 1"
+b111 0"
+bx /"
+1."
+0-"
+0,"
+b111 +"
+0*"
+0)"
+bx ("
+bx '"
+b110 &"
+bx %"
+1$"
+0#"
+0""
+b110 !"
+0~
+0}
+bx |
+bx {
+b101 z
+bx y
+1x
+0w
+0v
+b101 u
+0t
+0s
+bx r
+bx q
+b100 p
+bx o
+1n
+0m
+0l
+b100 k
+0j
+0i
+bx h
+bx g
+b11 f
+bx e
+1d
+0c
+0b
+b11 a
+0`
+0_
+bx ^
+bx ]
+b10 \
+bx [
+1Z
+0Y
+0X
+b10 W
+0V
+0U
+bx T
+bx S
+b1 R
+bx Q
+1P
+0O
+0N
+b1 M
+0L
+0K
+bx J
+bx I
+b0 H
+bx G
+1F
+0E
+0D
+b0 C
+0B
+0A
+b0 @
+bx ?
+bx >
+bx =
+0<
+b0 ;
+b0 :
+b0 9
+bx 8
+b0 7
+b0 6
+b0 5
+b0 4
+b1111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000000011001000000000000111100000000000010100 3
+b0 2
+b11 1
+b0 0
+b0 /
+b0 .
+0-
+b0 ,
+b1111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000111110100000000011111010000000001111101000000000000011001000000000000111100000000000010100 +
+1*
+0)
+0(
+b0 '
+b11 &
+0%
+b0 $
+0#
+b0 "
+0!
+$end
+#5000
+1#
+#10000
+0#
+#15000
+1#
+#20000
+0#
+#25000
+1#
+#30000
+0#
+#35000
+1#
+#40000
+0#
+#45000
+b1 @
+b1 .
+1(
+1#
+#50000
+0#
+#55000
+b10 @
+b10 .
+1#
+#60000
+0#
+#65000
+b1 {*
+b1 '+
+b1 (+
+b10000 )+
+b1 %+
+b11 @
+b1 d*
+b1 m*
+b1 y*
+b1 $+
+b1 *+
+b1 0+
+b1 6+
+b11 .
+b1111000011110000 8+
+b1100110011001100 2+
+b1010101010101010 ,+
+b1111111111111111 &+
+b100 #+
+1)
+1-
+b1111000011110000110011001100110010101010101010101111111111111111 ,
+b1111000011110000110011001100110010101010101010101111111111111111 4
+b1111000011110000110011001100110010101010101010101111111111111111 c*
+b1111000011110000110011001100110010101010101010101111111111111111 z*
+1%
+1#
+#70000
+0#
+#75000
+b10000 )+
+b10 '+
+b10 (+
+b100010 {*
+b1 -+
+b1 .+
+b10000 /+
+b11 %+
+b10 ++
+b11 d*
+b11 m*
+b11 y*
+b11 $+
+b11 *+
+b11 0+
+b11 6+
+b100 @
+b100 .
+b100 #+
+1#
+#80000
+0#
+#85000
+b1 |*
+b10000 )+
+b11 '+
+b11 (+
+b10000100011 {*
+b1 3+
+b1 4+
+b10000 5+
+b111 %+
+b100 1+
+b101 @
+b111 d*
+b111 m*
+b111 y*
+b111 $+
+b111 *+
+b111 0+
+b111 6+
+b101 .
+b100 #+
+1#
+#90000
+0#
+#95000
+b10000 )+
+b100 '+
+b100 (+
+b10000 /+
+b10 -+
+b10 .+
+b10000 5+
+b100001000100 {*
+b10 3+
+b10 4+
+b1111 %+
+b1010 ++
+b1100 1+
+b1111 d*
+b1111 m*
+b1111 y*
+b1111 $+
+b1111 *+
+b1111 0+
+b1111 6+
+1"+
+b11 f*
+b11 n*
+b11 !+
+b0 i*
+b0 p*
+b0 }*
+b0 h*
+b0 o*
+b0 ~*
+1e*
+b110 @
+b110 .
+b100 #+
+1#
+#100000
+0#
+#105000
+b10000 )+
+b101 '+
+b101 (+
+b1000100001000101 {*
+b1 9+
+b1 :+
+b10000 ;+
+b11111 %+
+b10000 7+
+b111 @
+b1 u*
+0"+
+0e*
+b11111 d*
+b11111 m*
+b11111 y*
+b11111 $+
+b11111 *+
+b11111 0+
+b11111 6+
+b111 .
+b100 #+
+1#
+#110000
+0#
+#115000
+b11 |*
+b10000 )+
+b110 '+
+b110 (+
+b10000 /+
+b11 -+
+b11 .+
+b10000 ;+
+b10000100001100110 {*
+b10 9+
+b10 :+
+b111111 %+
+b101010 ++
+b110000 7+
+b111111 d*
+b111111 m*
+b111111 y*
+b111111 $+
+b111111 *+
+b111111 0+
+b111111 6+
+1"+
+b101 f*
+b101 n*
+b101 !+
+1e*
+b11 =
+b11 j*
+b11 s*
+b11 =+
+b0 ?
+b0 l*
+b0 q*
+b0 >
+b0 k*
+b0 r*
+b0 <+
+1<
+b1000 @
+b1000 .
+b100 #+
+1#
+#120000
+0#
+#125000
+b1111 |*
+b10000 )+
+b111 '+
+b111 (+
+b10000 5+
+b11 3+
+b11 4+
+b10000 ;+
+b11000110001100111 {*
+b11 9+
+b11 :+
+b11 U#
+b11 Y#
+1V#
+b1111111 %+
+b1001100 1+
+b1110000 7+
+b1001 @
+b11 ;
+b11 0#
+b11 >+
+b1 :
+b1 /#
+b1 ?+
+b1 t*
+0<
+b10 u*
+0"+
+0e*
+b1111111 d*
+b1111111 m*
+b1111111 y*
+b1111111 $+
+b1111111 *+
+b1111111 0+
+b1111111 6+
+b1001 .
+b100 #+
+1#
+#130000
+0#
+#135000
+b10000 )+
+b1000 '+
+b1000 (+
+b10000 /+
+b100 -+
+b100 .+
+b10000 5+
+b100 3+
+b100 4+
+b10000 ;+
+b100001000010001000 {*
+b100 9+
+b100 :+
+b11111111 %+
+b10101010 ++
+b11001100 1+
+b11110000 7+
+0V#
+0W#
+b11111111 d*
+b11111111 m*
+b11111111 y*
+b11111111 $+
+b11111111 *+
+b11111111 0+
+b11111111 6+
+b11 i*
+b11 p*
+b11 }*
+1"+
+b11 f*
+b11 n*
+b11 !+
+1e*
+b101 =
+b101 j*
+b101 s*
+b101 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+12#
+1\#
+b11 3#
+b11 :#
+b11 L#
+b11 X#
+b11 Z#
+b11 [#
+b1010 @
+b1010 .
+b100 #+
+1#
+#140000
+0#
+#145000
+b11 S#
+b10000 )+
+b100001000010001001 {*
+b1001 '+
+b1001 (+
+b101 U#
+b101 Y#
+1V#
+b111111111 %+
+b1011 @
+b11 R#
+b11 =#
+b11 M#
+b11 O#
+b101 ;
+b101 0#
+b101 >+
+b1 :
+b1 /#
+b1 ?+
+b10 t*
+0<
+b11 u*
+0"+
+0e*
+b111111111 d*
+b111111111 m*
+b111111111 y*
+b111111111 $+
+b111111111 *+
+b111111111 0+
+b111111111 6+
+b1011 .
+b100 #+
+1#
+#150000
+0#
+#155000
+b10000 )+
+b1010 '+
+b1010 (+
+b10000 /+
+b100001000010101010 {*
+b101 -+
+b101 .+
+b1001 S#
+b1111111111 %+
+b1010101010 ++
+0V#
+b11 A#
+b1111111111 d*
+b1111111111 m*
+b1111111111 y*
+b1111111111 $+
+b1111111111 *+
+b1111111111 0+
+b1111111111 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b11 =
+b11 j*
+b11 s*
+b11 =+
+b11 ?
+b11 l*
+b11 q*
+1<
+b0 :
+b0 /#
+b0 ?+
+b110 =#
+b110 M#
+b110 O#
+b1001 R#
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1100 @
+b1100 .
+b100 #+
+1#
+#160000
+0#
+#165000
+b10001 S#
+b10000 )+
+b1011 '+
+b1011 (+
+b10000 5+
+b100001010010101011 {*
+b101 3+
+b101 4+
+b1001 A#
+b11 U#
+b11 Y#
+1V#
+b11111111111 %+
+b10011001100 1+
+b1101 @
+b11 I#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 =#
+b1001 M#
+b1001 O#
+b11 ;
+b11 0#
+b11 >+
+b1 :
+b1 /#
+b1 ?+
+b11 t*
+0<
+b100 u*
+0"+
+0e*
+b11111111111 d*
+b11111111111 m*
+b11111111111 y*
+b11111111111 $+
+b11111111111 *+
+b11111111111 0+
+b11111111111 6+
+b1101 .
+b100 #+
+1#
+#170000
+0#
+#175000
+b10000 )+
+b1100 '+
+b1100 (+
+b10000 /+
+b110 -+
+b110 .+
+b10000 5+
+b100001100011001100 {*
+b110 3+
+b110 4+
+b11100 S#
+b111111111111 %+
+b101010101010 ++
+b110011001100 1+
+0V#
+b1 A#
+b111111111111 d*
+b111111111111 m*
+b111111111111 y*
+b111111111111 $+
+b111111111111 *+
+b111111111111 0+
+b111111111111 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b100 =
+b100 j*
+b100 s*
+b100 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b1100 =#
+b1100 M#
+b1100 O#
+b11100 R#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b1001 I#
+b1110 @
+b1110 .
+b100 #+
+1#
+#180000
+0#
+#185000
+b101001 S#
+b10000 )+
+b1101 '+
+b1101 (+
+b10000 ;+
+b101001100011001101 {*
+b101 9+
+b101 :+
+b1100 A#
+b100 U#
+b100 Y#
+1V#
+b1111111111111 %+
+b1000011110000 7+
+b1111 @
+b10001 I#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b1 C#
+b10 <#
+b10 K#
+b10 P#
+b101001 R#
+b1111 =#
+b1111 M#
+b1111 O#
+b100 ;
+b100 0#
+b100 >+
+b1 :
+b1 /#
+b1 ?+
+b100 t*
+0<
+b101 u*
+0"+
+0e*
+b1111111111111 d*
+b1111111111111 m*
+b1111111111111 y*
+b1111111111111 $+
+b1111111111111 *+
+b1111111111111 0+
+b1111111111111 6+
+b1111 .
+b100 #+
+1#
+#190000
+0#
+#195000
+b10000 )+
+b1110 '+
+b1110 (+
+b10000 /+
+b111 -+
+b111 .+
+b10000 ;+
+b110001100011101110 {*
+b110 9+
+b110 :+
+b111001 S#
+b11111111111111 %+
+b10101010101010 ++
+b11000011110000 7+
+0V#
+b1001 A#
+1D
+1Q#
+1}#
+1K$
+1w$
+1E%
+1q%
+1?&
+1k&
+19'
+1e'
+13(
+1_(
+1-)
+1Y)
+1'*
+1S*
+b11111111111111 d*
+b11111111111111 m*
+b11111111111111 y*
+b11111111111111 $+
+b11111111111111 *+
+b11111111111111 0+
+b11111111111111 6+
+1"+
+b101 f*
+b101 n*
+b101 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b10010 =#
+b10010 M#
+b10010 O#
+b1101 C#
+b111001 R#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+1G#
+b0 H#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+1A
+b0 @
+b10000 .
+b100 #+
+1#
+#200000
+0#
+#205000
+b0 S#
+b10000 )+
+b1111 '+
+b1111 (+
+b10000 5+
+b111 3+
+b111 4+
+b10000 ;+
+b111001110011101111 {*
+b111 9+
+b111 :+
+1B
+0}#
+0K$
+0w$
+0E%
+0q%
+0?&
+0k&
+09'
+0e'
+03(
+0_(
+0-)
+0Y)
+0'*
+0S*
+0Q#
+0D
+b0 A#
+b0 U#
+b0 Y#
+b111111111111111 %+
+b100110011001100 1+
+b111000011110000 7+
+b1 7
+b1 )#
+1!
+1'#
+b0 ,#
+b10001 +#
+0F
+b1 @
+0A
+0G#
+0;#
+b0 9
+b0 .#
+06#
+09#
+b101001 I#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+b0 C#
+b11 <#
+b11 K#
+b11 P#
+b11111111111111101 R#
+b0 =#
+b0 M#
+b0 O#
+b0 ;
+b0 0#
+b0 >+
+b101 t*
+0<
+b110 u*
+0"+
+0e*
+b111111111111111 d*
+b111111111111111 m*
+b111111111111111 y*
+b111111111111111 $+
+b111111111111111 *+
+b111111111111111 0+
+b111111111111111 6+
+b1 6
+b1 &#
+1E
+1K
+bx0000 8
+b0 G
+b0 I
+b0 J
+b10001 .
+b100 #+
+1#
+#210000
+0#
+#215000
+0B
+b10000 )+
+b10000 '+
+b10000 (+
+b10000 /+
+b1000 -+
+b1000 .+
+b10000 5+
+b1000 3+
+b1000 4+
+b10000 ;+
+b1000010000100010000 {*
+b1000 9+
+b1000 :+
+b11 S#
+b0 ,#
+b10001 +#
+0'#
+0!
+b0 7
+b0 )#
+1F
+b1111111111111111 %+
+b1010101010101010 ++
+b1100110011001100 1+
+b1111000011110000 7+
+b0 6
+b0 &#
+0E
+0K
+b1111111111111111 d*
+b1111111111111111 m*
+b1111111111111111 y*
+b1111111111111111 $+
+b1111111111111111 *+
+b1111111111111111 0+
+b1111111111111111 6+
+1"+
+b111 f*
+b111 n*
+b111 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b101 =
+b101 j*
+b101 s*
+b101 =+
+1<
+b11 =#
+b11 M#
+b11 O#
+b11 R#
+b0 <#
+b0 K#
+b0 P#
+b0 I#
+b10 @
+b10010 .
+b100 #+
+b1 /
+1#
+#220000
+0#
+#225000
+b1001 S#
+b11 A#
+b101 U#
+b101 Y#
+1V#
+b11 @
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1001 R#
+b110 =#
+b110 M#
+b110 O#
+b101 ;
+b101 0#
+b101 >+
+b1 :
+b1 /#
+b1 ?+
+b110 t*
+0<
+b111 u*
+0"+
+0e*
+b10011 .
+b100 #+
+1#
+#230000
+0#
+#235000
+b10001 S#
+0V#
+b1001 A#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b111 =
+b111 j*
+b111 s*
+b111 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b1001 =#
+b1001 M#
+b1001 O#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b11 I#
+b100 @
+b10100 .
+b100 #+
+1#
+#240000
+0#
+#245000
+b11100 S#
+b1 A#
+b111 U#
+b111 Y#
+1V#
+b101 @
+b1001 I#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b11100 R#
+b1100 =#
+b1100 M#
+b1100 O#
+b111 ;
+b111 0#
+b111 >+
+b1 :
+b1 /#
+b1 ?+
+b111 t*
+0<
+b1000 u*
+0"+
+0e*
+b10101 .
+b100 #+
+1#
+#250000
+0#
+#255000
+b101001 S#
+0V#
+b1100 A#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b1000 =
+b1000 j*
+b1000 s*
+b1000 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b1111 =#
+b1111 M#
+b1111 O#
+b10 <#
+b10 K#
+b10 P#
+b1 C#
+b101001 R#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b10001 I#
+b110 @
+b10110 .
+b100 #+
+1#
+#260000
+0#
+#265000
+b111001 S#
+1Q#
+1D
+b1001 A#
+b1000 U#
+b1000 Y#
+1V#
+b111 @
+1G#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+b1101 C#
+b111001 R#
+b10010 =#
+b10010 M#
+b10010 O#
+b1000 ;
+b1000 0#
+b1000 >+
+b1 :
+b1 /#
+b1 ?+
+b1000 t*
+0<
+b1001 u*
+0"+
+0e*
+b10111 .
+b100 #+
+1#
+#270000
+0#
+#275000
+1B
+b10010 S#
+b1 7
+b1 )#
+1!
+1'#
+b0 ,#
+b10001 +#
+0F
+0V#
+b0 A#
+0Q#
+0D
+b1 6
+b1 &#
+1E
+1K
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b10101 =#
+b10101 M#
+b10101 O#
+b11 <#
+b11 K#
+b11 P#
+b10110 C#
+b10010 R#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+0;#
+b0 9
+b0 .#
+06#
+09#
+b101001 I#
+b1000 @
+b11000 .
+b100 #+
+1#
+#280000
+0#
+#285000
+b101010 S#
+0B
+b10 A#
+1V#
+b0 ,#
+b10001 +#
+0'#
+0!
+b0 7
+b0 )#
+1F
+b1001 @
+b0 I#
+1>#
+b10010 8#
+b10010 F#
+b10010 J#
+b10010 T#
+b0 <#
+b0 K#
+b0 P#
+b101010 R#
+b11000 =#
+b11000 M#
+b11000 O#
+b1 :
+b1 /#
+b1 ?+
+b1001 t*
+0<
+b1010 u*
+0"+
+0e*
+b0 6
+b0 &#
+0E
+0K
+b11001 .
+b100 #+
+b10 /
+1#
+#290000
+0#
+#295000
+b1000011 S#
+0V#
+b1010 A#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b11011 =#
+b11011 M#
+b11011 O#
+b10 <#
+b10 K#
+b10 P#
+b11000 C#
+b1000011 R#
+b101010 8#
+b101010 F#
+b101010 J#
+b101010 T#
+b10010 I#
+b1010 @
+b11010 .
+b100 #+
+1#
+#300000
+0#
+#305000
+b1011110 S#
+b11 A#
+1V#
+b1011 @
+b101010 I#
+b1000011 8#
+b1000011 F#
+b1000011 J#
+b1000011 T#
+b100010 C#
+b11 <#
+b11 K#
+b11 P#
+b1011110 R#
+b11110 =#
+b11110 M#
+b11110 O#
+b1 :
+b1 /#
+b1 ?+
+b1010 t*
+0<
+b1011 u*
+0"+
+0e*
+b11011 .
+b100 #+
+1#
+#310000
+0#
+#315000
+b1111010 S#
+0V#
+b1110 A#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b100001 =#
+b100001 M#
+b100001 O#
+b101 <#
+b101 K#
+b101 P#
+b100101 C#
+b1111010 R#
+b1011110 8#
+b1011110 F#
+b1011110 J#
+b1011110 T#
+b1000011 I#
+b1100 @
+b11100 .
+b100 #+
+1#
+#320000
+0#
+#325000
+b10011000 S#
+b1010 A#
+1V#
+b1101 @
+b1011110 I#
+b1111010 8#
+b1111010 F#
+b1111010 J#
+b1111010 T#
+b110011 C#
+b110 <#
+b110 K#
+b110 P#
+b10011000 R#
+b100100 =#
+b100100 M#
+b100100 O#
+b1 :
+b1 /#
+b1 ?+
+b1011 t*
+0<
+b1100 u*
+0"+
+0e*
+b11101 .
+b100 #+
+1#
+#330000
+0#
+#335000
+b10110111 S#
+0V#
+b1000 A#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b100111 =#
+b100111 M#
+b100111 O#
+b1000 <#
+b1000 K#
+b1000 P#
+b111101 C#
+b10110111 R#
+b10011000 8#
+b10011000 F#
+b10011000 J#
+b10011000 T#
+b1111010 I#
+b1110 @
+b11110 .
+b100 #+
+1#
+#340000
+0#
+#345000
+b11010111 S#
+b111 A#
+1V#
+b1111 @
+b10011000 I#
+b10110111 8#
+b10110111 F#
+b10110111 J#
+b10110111 T#
+b1000101 C#
+b1010 <#
+b1010 K#
+b1010 P#
+b11010111 R#
+b101010 =#
+b101010 M#
+b101010 O#
+b1 :
+b1 /#
+b1 ?+
+b1100 t*
+0<
+b1101 u*
+0"+
+0e*
+b11111 .
+b100 #+
+1#
+#350000
+0#
+#355000
+b11111000 S#
+0V#
+1Q#
+1}#
+1K$
+1w$
+1E%
+1q%
+1?&
+1k&
+19'
+1e'
+13(
+1_(
+1-)
+1Y)
+1'*
+1S*
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b101101 =#
+b101101 M#
+b101101 O#
+b1100 <#
+b1100 K#
+b1100 P#
+b1001100 C#
+b11111000 R#
+b11010111 8#
+b11010111 F#
+b11010111 J#
+b11010111 T#
+b10110111 I#
+1A
+b0 @
+b100000 .
+b100 #+
+1#
+#360000
+0#
+#365000
+b0 S#
+0Q#
+0}#
+0K$
+0w$
+0E%
+0q%
+0?&
+0k&
+09'
+0e'
+03(
+0_(
+0-)
+0Y)
+0'*
+0S*
+b0 A#
+b0 U#
+b0 Y#
+b1 @
+0A
+0G#
+b11010111 I#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+b0 C#
+b1110 <#
+b1110 K#
+b1110 P#
+b11111111111110010 R#
+b0 =#
+b0 M#
+b0 O#
+b0 ;
+b0 0#
+b0 >+
+b1101 t*
+0<
+b1110 u*
+0"+
+0e*
+b100001 .
+b100 #+
+1#
+#370000
+0#
+#375000
+b11 S#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b11 =#
+b11 M#
+b11 O#
+b11 R#
+b0 <#
+b0 K#
+b0 P#
+b0 I#
+b10 @
+b100010 .
+b100 #+
+1#
+#380000
+0#
+#385000
+b1001 S#
+b10000 )+
+b1000010000100001111 {*
+b1111 '+
+b1111 (+
+b11 A#
+b1000 U#
+b1000 Y#
+1V#
+b1111111111111110 %+
+b11 @
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1001 R#
+b110 =#
+b110 M#
+b110 O#
+b1000 ;
+b1000 0#
+b1000 >+
+b1 :
+b1 /#
+b1 ?+
+b1110 t*
+0<
+b1111 u*
+0"+
+0e*
+b1111111111111110 d*
+b1111111111111110 m*
+b1111111111111110 y*
+b1111111111111110 $+
+b1111111111111110 *+
+b1111111111111110 0+
+b1111111111111110 6+
+b100011 .
+b100 #+
+0)
+1#
+#390000
+0#
+#395000
+b10000 )+
+b1110 '+
+b1110 (+
+b10000 /+
+b1000010000011101110 {*
+b111 -+
+b111 .+
+b10001 S#
+b1111111111111100 %+
+b1010101010101000 ++
+0V#
+b1001 A#
+b1111111111111100 d*
+b1111111111111100 m*
+b1111111111111100 y*
+b1111111111111100 $+
+b1111111111111100 *+
+b1111111111111100 0+
+b1111111111111100 6+
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b1001 =#
+b1001 M#
+b1001 O#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b11 I#
+b100 @
+b100100 .
+b100 #+
+1#
+#400000
+0#
+#405000
+b11100 S#
+b10000 )+
+b1101 '+
+b1101 (+
+b10000 5+
+b1000001110011101101 {*
+b111 3+
+b111 4+
+b1 A#
+1V#
+b1111111111111000 %+
+b1100110011001000 1+
+b101 @
+b1001 I#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b11100 R#
+b1100 =#
+b1100 M#
+b1100 O#
+b1 :
+b1 /#
+b1 ?+
+b1111 t*
+0<
+0g*
+b0 u*
+0"+
+0e*
+b1111111111111000 d*
+b1111111111111000 m*
+b1111111111111000 y*
+b1111111111111000 $+
+b1111111111111000 *+
+b1111111111111000 0+
+b1111111111111000 6+
+b100101 .
+b100 #+
+1#
+#410000
+0#
+#415000
+b10000 )+
+b1100 '+
+b1100 (+
+b10000 /+
+b110 -+
+b110 .+
+b10000 5+
+b1000001100011001100 {*
+b110 3+
+b110 4+
+b101001 S#
+b1111111111110000 %+
+b1010101010100000 ++
+b1100110011000000 1+
+0V#
+b1100 A#
+b1111111111110000 d*
+b1111111111110000 m*
+b1111111111110000 y*
+b1111111111110000 $+
+b1111111111110000 *+
+b1111111111110000 0+
+b1111111111110000 6+
+1<
+b0 :
+b0 /#
+b0 ?+
+b1111 =#
+b1111 M#
+b1111 O#
+b10 <#
+b10 K#
+b10 P#
+b1 C#
+b101001 R#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b10001 I#
+b110 @
+b100110 .
+1#
+#420000
+0#
+#425000
+b111001 S#
+b10000 )+
+b1011 '+
+b1011 (+
+b10000 ;+
+b111001100011001011 {*
+b111 9+
+b111 :+
+1Q#
+1D
+b1001 A#
+1V#
+b1111111111100000 %+
+b1111000011100000 7+
+b111 @
+1G#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+b1101 C#
+b111001 R#
+b10010 =#
+b10010 M#
+b10010 O#
+b1 :
+b1 /#
+b1 ?+
+1g*
+b0 t*
+0<
+b1111111111100000 d*
+b1111111111100000 m*
+b1111111111100000 y*
+b1111111111100000 $+
+b1111111111100000 *+
+b1111111111100000 0+
+b1111111111100000 6+
+b100111 .
+1#
+#430000
+0#
+#435000
+1B
+b10000 )+
+b1010 '+
+b1010 (+
+b10000 /+
+b101 -+
+b101 .+
+b10000 ;+
+b110001100010101010 {*
+b110 9+
+b110 :+
+b10010 S#
+b1 7
+b1 )#
+1!
+1'#
+b0 ,#
+b10001 +#
+0F
+b1111111111000000 %+
+b1010101010000000 ++
+b1111000011000000 7+
+0V#
+b0 A#
+0Q#
+0D
+b1 6
+b1 &#
+1E
+1K
+b1111111111000000 d*
+b1111111111000000 m*
+b1111111111000000 y*
+b1111111111000000 $+
+b1111111111000000 *+
+b1111111111000000 0+
+b1111111111000000 6+
+1"+
+b111 f*
+b111 n*
+b111 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b0 :
+b0 /#
+b0 ?+
+b10101 =#
+b10101 M#
+b10101 O#
+b11 <#
+b11 K#
+b11 P#
+b10110 C#
+b10010 R#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+0;#
+b0 9
+b0 .#
+06#
+09#
+b101001 I#
+b1000 @
+b101000 .
+b100 #+
+1#
+#440000
+0#
+#445000
+b101010 S#
+b10000 )+
+b1001 '+
+b1001 (+
+b10000 5+
+b101 3+
+b101 4+
+b10000 ;+
+b101001010010101001 {*
+b101 9+
+b101 :+
+0B
+b10 A#
+b1111111110000000 %+
+b1100110010000000 1+
+b1111000010000000 7+
+b0 ,#
+b10001 +#
+0'#
+0!
+b0 7
+b0 )#
+1F
+b1001 @
+b0 I#
+1>#
+b10010 8#
+b10010 F#
+b10010 J#
+b10010 T#
+b0 <#
+b0 K#
+b0 P#
+b101010 R#
+b11000 =#
+b11000 M#
+b11000 O#
+b1 u*
+0"+
+0e*
+b1111111110000000 d*
+b1111111110000000 m*
+b1111111110000000 y*
+b1111111110000000 $+
+b1111111110000000 *+
+b1111111110000000 0+
+b1111111110000000 6+
+b0 6
+b0 &#
+0E
+0K
+b101001 .
+b100 #+
+b11 /
+1#
+#450000
+0#
+#455000
+b10000 )+
+b1000 '+
+b1000 (+
+b10000 /+
+b100 -+
+b100 .+
+b10000 5+
+b100 3+
+b100 4+
+b10000 ;+
+b100001000010001000 {*
+b100 9+
+b100 :+
+b1000011 S#
+b1111111100000000 %+
+b1010101000000000 ++
+b1100110000000000 1+
+b1111000000000000 7+
+b1010 A#
+b1111111100000000 d*
+b1111111100000000 m*
+b1111111100000000 y*
+b1111111100000000 $+
+b1111111100000000 *+
+b1111111100000000 0+
+b1111111100000000 6+
+1"+
+b101 f*
+b101 n*
+b101 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b111 =
+b111 j*
+b111 s*
+b111 =+
+1<
+b11011 =#
+b11011 M#
+b11011 O#
+b10 <#
+b10 K#
+b10 P#
+b11000 C#
+b1000011 R#
+b101010 8#
+b101010 F#
+b101010 J#
+b101010 T#
+b10010 I#
+b1010 @
+b101010 .
+b100 #+
+1#
+#460000
+0#
+#465000
+b1011110 S#
+b10000 )+
+b100001000010000111 {*
+b111 '+
+b111 (+
+b11 A#
+b111 U#
+b111 Y#
+1V#
+b1111111000000000 %+
+b1011 @
+b101010 I#
+b1000011 8#
+b1000011 F#
+b1000011 J#
+b1000011 T#
+b100010 C#
+b11 <#
+b11 K#
+b11 P#
+b1011110 R#
+b11110 =#
+b11110 M#
+b11110 O#
+b111 ;
+b111 0#
+b111 >+
+b1 :
+b1 /#
+b1 ?+
+b1 t*
+0<
+b10 u*
+0"+
+0e*
+b1111111000000000 d*
+b1111111000000000 m*
+b1111111000000000 y*
+b1111111000000000 $+
+b1111111000000000 *+
+b1111111000000000 0+
+b1111111000000000 6+
+b101011 .
+b100 #+
+1#
+#470000
+0#
+#475000
+b10000 )+
+b110 '+
+b110 (+
+b10000 /+
+b100001000001100110 {*
+b11 -+
+b11 .+
+b1111010 S#
+b1111110000000000 %+
+b1010100000000000 ++
+0V#
+b1110 A#
+b1111110000000000 d*
+b1111110000000000 m*
+b1111110000000000 y*
+b1111110000000000 $+
+b1111110000000000 *+
+b1111110000000000 0+
+b1111110000000000 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b101 =
+b101 j*
+b101 s*
+b101 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b100001 =#
+b100001 M#
+b100001 O#
+b101 <#
+b101 K#
+b101 P#
+b100101 C#
+b1111010 R#
+b1011110 8#
+b1011110 F#
+b1011110 J#
+b1011110 T#
+b1000011 I#
+b1100 @
+b101100 .
+b100 #+
+1#
+#480000
+0#
+#485000
+b10011000 S#
+b10000 )+
+b101 '+
+b101 (+
+b10000 5+
+b100000110001100101 {*
+b11 3+
+b11 4+
+b1010 A#
+b101 U#
+b101 Y#
+1V#
+b1111100000000000 %+
+b1100100000000000 1+
+b1101 @
+b1011110 I#
+b1111010 8#
+b1111010 F#
+b1111010 J#
+b1111010 T#
+b110011 C#
+b110 <#
+b110 K#
+b110 P#
+b10011000 R#
+b100100 =#
+b100100 M#
+b100100 O#
+b101 ;
+b101 0#
+b101 >+
+b1 :
+b1 /#
+b1 ?+
+b10 t*
+0<
+b11 u*
+0"+
+0e*
+b1111100000000000 d*
+b1111100000000000 m*
+b1111100000000000 y*
+b1111100000000000 $+
+b1111100000000000 *+
+b1111100000000000 0+
+b1111100000000000 6+
+b101101 .
+b100 #+
+1#
+#490000
+0#
+#495000
+b1001 |*
+b10000 )+
+b100 '+
+b100 (+
+b10000 /+
+b10 -+
+b10 .+
+b10000 5+
+b100000100001000100 {*
+b10 3+
+b10 4+
+b10110111 S#
+b1111000000000000 %+
+b1010000000000000 ++
+b1100000000000000 1+
+0V#
+b1000 A#
+b1111000000000000 d*
+b1111000000000000 m*
+b1111000000000000 y*
+b1111000000000000 $+
+b1111000000000000 *+
+b1111000000000000 0+
+b1111000000000000 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+b100 =
+b100 j*
+b100 s*
+b100 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b100111 =#
+b100111 M#
+b100111 O#
+b1000 <#
+b1000 K#
+b1000 P#
+b111101 C#
+b10110111 R#
+b10011000 8#
+b10011000 F#
+b10011000 J#
+b10011000 T#
+b1111010 I#
+b1110 @
+b101110 .
+b100 #+
+1#
+#500000
+0#
+#505000
+b11010111 S#
+b10000 )+
+b11 '+
+b11 (+
+b10000 ;+
+b11000100001000011 {*
+b11 9+
+b11 :+
+b111 A#
+b100 U#
+b100 Y#
+1V#
+b1110000000000000 %+
+b1110000000000000 7+
+b1111 @
+b10011000 I#
+b10110111 8#
+b10110111 F#
+b10110111 J#
+b10110111 T#
+b1000101 C#
+b1010 <#
+b1010 K#
+b1010 P#
+b11010111 R#
+b101010 =#
+b101010 M#
+b101010 O#
+b100 ;
+b100 0#
+b100 >+
+b1 :
+b1 /#
+b1 ?+
+b11 t*
+0<
+b100 u*
+0"+
+0e*
+b1110000000000000 d*
+b1110000000000000 m*
+b1110000000000000 y*
+b1110000000000000 $+
+b1110000000000000 *+
+b1110000000000000 0+
+b1110000000000000 6+
+b101111 .
+b100 #+
+1#
+#510000
+0#
+#515000
+b0 |*
+b10000 )+
+b10 '+
+b10 (+
+b10000 /+
+b1 -+
+b1 .+
+b10000 ;+
+b10000100000100010 {*
+b10 9+
+b10 :+
+b11111000 S#
+b1100000000000000 %+
+b1000000000000000 ++
+b1100000000000000 7+
+0V#
+1Q#
+1}#
+1K$
+1w$
+1E%
+1q%
+1?&
+1k&
+19'
+1e'
+13(
+1_(
+1-)
+1Y)
+1'*
+1S*
+b1100000000000000 d*
+b1100000000000000 m*
+b1100000000000000 y*
+b1100000000000000 $+
+b1100000000000000 *+
+b1100000000000000 0+
+b1100000000000000 6+
+1"+
+b11 f*
+b11 n*
+b11 !+
+b11 i*
+b11 p*
+b11 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b101101 =#
+b101101 M#
+b101101 O#
+b1100 <#
+b1100 K#
+b1100 P#
+b1001100 C#
+b11111000 R#
+b11010111 8#
+b11010111 F#
+b11010111 J#
+b11010111 T#
+b10110111 I#
+1A
+b0 @
+b110000 .
+b100 #+
+1#
+#520000
+0#
+#525000
+b0 S#
+b10000 )+
+b1 '+
+b1 (+
+b10000 5+
+b1 3+
+b1 4+
+b10000 ;+
+b1000010000100001 {*
+b1 9+
+b1 :+
+0Q#
+0}#
+0K$
+0w$
+0E%
+0q%
+0?&
+0k&
+09'
+0e'
+03(
+0_(
+0-)
+0Y)
+0'*
+0S*
+b0 A#
+b0 U#
+b0 Y#
+b1000000000000000 %+
+b1000000000000000 1+
+b1000000000000000 7+
+b1 @
+0A
+0G#
+b11010111 I#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+b0 C#
+b1110 <#
+b1110 K#
+b1110 P#
+b11111111111110010 R#
+b0 =#
+b0 M#
+b0 O#
+b0 ;
+b0 0#
+b0 >+
+b100 t*
+0<
+b101 u*
+0"+
+0e*
+b1000000000000000 d*
+b1000000000000000 m*
+b1000000000000000 y*
+b1000000000000000 $+
+b1000000000000000 *+
+b1000000000000000 0+
+b1000000000000000 6+
+b110001 .
+b100 #+
+1#
+#530000
+0#
+#535000
+b10000 )+
+b0 '+
+b0 (+
+b10000 /+
+b0 -+
+b0 .+
+b10000 5+
+b0 3+
+b0 4+
+b10000 ;+
+b0 {*
+b0 9+
+b0 :+
+b11 S#
+b0 %+
+b0 ++
+b0 1+
+b0 7+
+b0 d*
+b0 m*
+b0 y*
+b0 $+
+b0 *+
+b0 0+
+b0 6+
+b11 =
+b11 j*
+b11 s*
+b11 =+
+1<
+b11 =#
+b11 M#
+b11 O#
+b11 R#
+b0 <#
+b0 K#
+b0 P#
+b0 I#
+b10 @
+b110010 .
+b100 #+
+1#
+#540000
+0#
+#545000
+b1001 S#
+b11 A#
+b11 U#
+b11 Y#
+1V#
+b11 @
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1001 R#
+b110 =#
+b110 M#
+b110 O#
+b11 ;
+b11 0#
+b11 >+
+b1 :
+b1 /#
+b1 ?+
+b101 t*
+0<
+b110011 .
+b100 #+
+1#
+#550000
+0#
+#555000
+b10001 S#
+0V#
+b1001 A#
+b0 :
+b0 /#
+b0 ?+
+b1001 =#
+b1001 M#
+b1001 O#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b11 I#
+b100 @
+b110100 .
+b100 #+
+1#
+#560000
+0#
+#565000
+b11100 S#
+b1 A#
+b101 @
+b1001 I#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b11100 R#
+b1100 =#
+b1100 M#
+b1100 O#
+b110101 .
+b100 #+
+1#
+#570000
+0#
+#575000
+b101001 S#
+b1100 A#
+b1111 =#
+b1111 M#
+b1111 O#
+b10 <#
+b10 K#
+b10 P#
+b1 C#
+b101001 R#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b10001 I#
+b110 @
+b110110 .
+b100 #+
+1#
+#580000
+0#
+#585000
+b111001 S#
+b1 {*
+b1 '+
+b1 (+
+b10000 )+
+1Q#
+1D
+b1001 A#
+b1 %+
+b111 @
+1G#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+b1101 C#
+b111001 R#
+b10010 =#
+b10010 M#
+b10010 O#
+b1 d*
+b1 m*
+b1 y*
+b1 $+
+b1 *+
+b1 0+
+b1 6+
+b110111 .
+b100 #+
+1)
+b100 $
+b100 0
+b100 _*
+b100 v*
+b1 '
+b1 2
+b1 b*
+b1 x*
+1#
+#590000
+0#
+#595000
+1B
+b10000 )+
+b10 '+
+b10 (+
+b100010 {*
+b1 -+
+b1 .+
+b10000 /+
+b10010 S#
+b1 7
+b1 )#
+1!
+1'#
+b0 ,#
+b10001 +#
+0F
+b11 %+
+b10 ++
+b0 A#
+0Q#
+0D
+b1 6
+b1 &#
+1E
+1K
+b11 d*
+b11 m*
+b11 y*
+b11 $+
+b11 *+
+b11 0+
+b11 6+
+b10101 =#
+b10101 M#
+b10101 O#
+b11 <#
+b11 K#
+b11 P#
+b10110 C#
+b10010 R#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+0;#
+b0 9
+b0 .#
+06#
+09#
+b101001 I#
+b1000 @
+b111000 .
+b100 #+
+1#
+#600000
+0#
+#605000
+b1 |*
+b101010 S#
+b10000 )+
+b11 '+
+b11 (+
+b10000100011 {*
+b1 3+
+b1 4+
+b10000 5+
+0B
+b10 A#
+b111 %+
+b100 1+
+b0 ,#
+b10001 +#
+0'#
+0!
+b0 7
+b0 )#
+1F
+b1001 @
+b0 I#
+1>#
+b10010 8#
+b10010 F#
+b10010 J#
+b10010 T#
+b0 <#
+b0 K#
+b0 P#
+b101010 R#
+b11000 =#
+b11000 M#
+b11000 O#
+b111 d*
+b111 m*
+b111 y*
+b111 $+
+b111 *+
+b111 0+
+b111 6+
+b0 6
+b0 &#
+0E
+0K
+b111001 .
+b100 #+
+b100 /
+1#
+#610000
+0#
+#615000
+b10000 )+
+b100 '+
+b100 (+
+b10000 /+
+b10 -+
+b10 .+
+b10000 5+
+b100001000100 {*
+b10 3+
+b10 4+
+b1000011 S#
+b1111 %+
+b1010 ++
+b1100 1+
+b1010 A#
+b1111 d*
+b1111 m*
+b1111 y*
+b1111 $+
+b1111 *+
+b1111 0+
+b1111 6+
+1"+
+b100 i*
+b100 p*
+b100 }*
+b1 h*
+b1 o*
+b1 ~*
+1e*
+b11011 =#
+b11011 M#
+b11011 O#
+b10 <#
+b10 K#
+b10 P#
+b11000 C#
+b1000011 R#
+b101010 8#
+b101010 F#
+b101010 J#
+b101010 T#
+b10010 I#
+b1010 @
+b111010 .
+b100 #+
+1#
+#620000
+0#
+#625000
+b1011110 S#
+b10000 )+
+b101 '+
+b101 (+
+b1000100001000101 {*
+b1 9+
+b1 :+
+b10000 ;+
+b11 A#
+b11111 %+
+b10000 7+
+b1011 @
+b101010 I#
+b1000011 8#
+b1000011 F#
+b1000011 J#
+b1000011 T#
+b100010 C#
+b11 <#
+b11 K#
+b11 P#
+b1011110 R#
+b11110 =#
+b11110 M#
+b11110 O#
+b110 u*
+0"+
+0e*
+b11111 d*
+b11111 m*
+b11111 y*
+b11111 $+
+b11111 *+
+b11111 0+
+b11111 6+
+b111011 .
+b100 #+
+1#
+#630000
+0#
+#635000
+b11 |*
+b10000 )+
+b110 '+
+b110 (+
+b10000 /+
+b11 -+
+b11 .+
+b10000 ;+
+b10000100001100110 {*
+b10 9+
+b10 :+
+b1111010 S#
+b111111 %+
+b101010 ++
+b110000 7+
+b1110 A#
+b111111 d*
+b111111 m*
+b111111 y*
+b111111 $+
+b111111 *+
+b111111 0+
+b111111 6+
+1"+
+b101 f*
+b101 n*
+b101 !+
+1e*
+b100 ?
+b100 l*
+b100 q*
+b1 >
+b1 k*
+b1 r*
+b1 <+
+1<
+b100001 =#
+b100001 M#
+b100001 O#
+b101 <#
+b101 K#
+b101 P#
+b100101 C#
+b1111010 R#
+b1011110 8#
+b1011110 F#
+b1011110 J#
+b1011110 T#
+b1000011 I#
+b1100 @
+b111100 .
+b100 #+
+1#
+#640000
+0#
+#645000
+b1111 |*
+b10011000 S#
+b10000 )+
+b111 '+
+b111 (+
+b10000 5+
+b11 3+
+b11 4+
+b10000 ;+
+b11000110001100111 {*
+b11 9+
+b11 :+
+b1010 A#
+b11 #$
+b11 '$
+1$$
+b1111111 %+
+b1001100 1+
+b1110000 7+
+b1101 @
+b1011110 I#
+b1111010 8#
+b1111010 F#
+b1111010 J#
+b1111010 T#
+b110011 C#
+b110 <#
+b110 K#
+b110 P#
+b10011000 R#
+b100100 =#
+b100100 M#
+b100100 O#
+b1100011 ;
+b1100011 0#
+b1100011 >+
+b10 :
+b10 /#
+b10 ?+
+b110 t*
+0<
+b111 u*
+0"+
+0e*
+b1111111 d*
+b1111111 m*
+b1111111 y*
+b1111111 $+
+b1111111 *+
+b1111111 0+
+b1111111 6+
+b111101 .
+b100 #+
+1#
+#650000
+0#
+#655000
+b10000 )+
+b1000 '+
+b1000 (+
+b10000 /+
+b100 -+
+b100 .+
+b10000 5+
+b100 3+
+b100 4+
+b10000 ;+
+b100001000010001000 {*
+b100 9+
+b100 :+
+b10110111 S#
+b11111111 %+
+b10101010 ++
+b11001100 1+
+b11110000 7+
+0$$
+b1000 A#
+0%$
+b11111111 d*
+b11111111 m*
+b11111111 y*
+b11111111 $+
+b11111111 *+
+b11111111 0+
+b11111111 6+
+b111 i*
+b111 p*
+b111 }*
+1"+
+b11 f*
+b11 n*
+b11 !+
+1e*
+b101 =
+b101 j*
+b101 s*
+b101 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b100111 =#
+b100111 M#
+b100111 O#
+b1000 <#
+b1000 K#
+b1000 P#
+b111101 C#
+b10110111 R#
+b10011000 8#
+b10011000 F#
+b10011000 J#
+b10011000 T#
+b1111010 I#
+1^#
+1*$
+b11 _#
+b11 f#
+b11 x#
+b11 &$
+b11 ($
+b11 )$
+b1110 @
+b111110 .
+b100 #+
+1#
+#660000
+0#
+#665000
+b11 !$
+b11010111 S#
+b10000 )+
+b100001000010001001 {*
+b1001 '+
+b1001 (+
+b111 A#
+b101 #$
+b101 '$
+1$$
+b111111111 %+
+b1111 @
+b11 ~#
+b11 i#
+b11 y#
+b11 {#
+b10011000 I#
+b10110111 8#
+b10110111 F#
+b10110111 J#
+b10110111 T#
+b1000101 C#
+b1010 <#
+b1010 K#
+b1010 P#
+b11010111 R#
+b101010 =#
+b101010 M#
+b101010 O#
+b10100011 ;
+b10100011 0#
+b10100011 >+
+b10 :
+b10 /#
+b10 ?+
+b111 t*
+0<
+b1000 u*
+0"+
+0e*
+b111111111 d*
+b111111111 m*
+b111111111 y*
+b111111111 $+
+b111111111 *+
+b111111111 0+
+b111111111 6+
+b111111 .
+b100 #+
+1#
+#670000
+0#
+#675000
+b10000 )+
+b1010 '+
+b1010 (+
+b10000 /+
+b100001000010101010 {*
+b101 -+
+b101 .+
+b11111000 S#
+b1001 !$
+b1111111111 %+
+b1010101010 ++
+0$$
+b11 m#
+1Q#
+1}#
+1K$
+1w$
+1E%
+1q%
+1?&
+1k&
+19'
+1e'
+13(
+1_(
+1-)
+1Y)
+1'*
+1S*
+b1111111111 d*
+b1111111111 m*
+b1111111111 y*
+b1111111111 $+
+b1111111111 *+
+b1111111111 0+
+b1111111111 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b11 =
+b11 j*
+b11 s*
+b11 =+
+b111 ?
+b111 l*
+b111 q*
+1<
+b0 :
+b0 /#
+b0 ?+
+b101101 =#
+b101101 M#
+b101101 O#
+b1100 <#
+b1100 K#
+b1100 P#
+b1001100 C#
+b11111000 R#
+b11010111 8#
+b11010111 F#
+b11010111 J#
+b11010111 T#
+b10110111 I#
+b110 i#
+b110 y#
+b110 {#
+b1001 ~#
+b11 d#
+b11 r#
+b11 v#
+b11 "$
+1A
+b0 @
+b1000000 .
+b100 #+
+1#
+#680000
+0#
+#685000
+b0 !$
+b0 S#
+b10000 )+
+b1011 '+
+b1011 (+
+b10000 5+
+b100001010010101011 {*
+b101 3+
+b101 4+
+0Q#
+0}#
+0K$
+0w$
+0E%
+0q%
+0?&
+0k&
+09'
+0e'
+03(
+0_(
+0-)
+0Y)
+0'*
+0S*
+b0 m#
+b0 A#
+b0 #$
+b0 '$
+b0 U#
+b0 Y#
+b11111111111 %+
+b10011001100 1+
+b1 @
+0A
+b11 u#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b1 h#
+b1 w#
+b1 |#
+b11111111111111111 ~#
+b0 i#
+b0 y#
+b0 {#
+0G#
+b11010111 I#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+b0 C#
+b1110 <#
+b1110 K#
+b1110 P#
+b11111111111110010 R#
+b0 =#
+b0 M#
+b0 O#
+b0 ;
+b0 0#
+b0 >+
+b1000 t*
+0<
+b1001 u*
+0"+
+0e*
+b11111111111 d*
+b11111111111 m*
+b11111111111 y*
+b11111111111 $+
+b11111111111 *+
+b11111111111 0+
+b11111111111 6+
+b1000001 .
+b100 #+
+1#
+#690000
+0#
+#695000
+b10000 )+
+b1100 '+
+b1100 (+
+b10000 /+
+b110 -+
+b110 .+
+b10000 5+
+b100001100011001100 {*
+b110 3+
+b110 4+
+b11 S#
+b11 !$
+b111111111111 %+
+b101010101010 ++
+b110011001100 1+
+b111111111111 d*
+b111111111111 m*
+b111111111111 y*
+b111111111111 $+
+b111111111111 *+
+b111111111111 0+
+b111111111111 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b100 =
+b100 j*
+b100 s*
+b100 =+
+1<
+b11 =#
+b11 M#
+b11 O#
+b11 R#
+b0 <#
+b0 K#
+b0 P#
+b0 I#
+b11 i#
+b11 y#
+b11 {#
+b11 ~#
+b0 h#
+b0 w#
+b0 |#
+b0 u#
+b10 @
+b1000010 .
+b100 #+
+1#
+#700000
+0#
+#705000
+b1001 !$
+b1001 S#
+b10000 )+
+b1101 '+
+b1101 (+
+b10000 ;+
+b101001100011001101 {*
+b101 9+
+b101 :+
+b11 m#
+b11 A#
+b100 #$
+b100 '$
+1$$
+b1111111111111 %+
+b1000011110000 7+
+b11 @
+b11 d#
+b11 r#
+b11 v#
+b11 "$
+b1001 ~#
+b110 i#
+b110 y#
+b110 {#
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1001 R#
+b110 =#
+b110 M#
+b110 O#
+b10000000 ;
+b10000000 0#
+b10000000 >+
+b10 :
+b10 /#
+b10 ?+
+b1001 t*
+0<
+b1010 u*
+0"+
+0e*
+b1111111111111 d*
+b1111111111111 m*
+b1111111111111 y*
+b1111111111111 $+
+b1111111111111 *+
+b1111111111111 0+
+b1111111111111 6+
+b1000011 .
+b100 #+
+1#
+#710000
+0#
+#715000
+b10000 )+
+b1110 '+
+b1110 (+
+b10000 /+
+b111 -+
+b111 .+
+b10000 ;+
+b110001100011101110 {*
+b110 9+
+b110 :+
+b10001 S#
+b10001 !$
+b11111111111111 %+
+b10101010101010 ++
+b11000011110000 7+
+0$$
+b1001 A#
+b1001 m#
+b11111111111111 d*
+b11111111111111 m*
+b11111111111111 y*
+b11111111111111 $+
+b11111111111111 *+
+b11111111111111 0+
+b11111111111111 6+
+1"+
+b101 f*
+b101 n*
+b101 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b1001 =#
+b1001 M#
+b1001 O#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b11 I#
+b1001 i#
+b1001 y#
+b1001 {#
+b1 h#
+b1 w#
+b1 |#
+b10001 ~#
+b1001 d#
+b1001 r#
+b1001 v#
+b1001 "$
+b11 u#
+b100 @
+b1000100 .
+b100 #+
+1#
+#720000
+0#
+#725000
+b11100 !$
+b11100 S#
+b10000 )+
+b1111 '+
+b1111 (+
+b10000 5+
+b111 3+
+b111 4+
+b10000 ;+
+b111001110011101111 {*
+b111 9+
+b111 :+
+b1 m#
+b1 A#
+1$$
+b111111111111111 %+
+b100110011001100 1+
+b111000011110000 7+
+b101 @
+b1001 u#
+1j#
+b10001 d#
+b10001 r#
+b10001 v#
+b10001 "$
+b11100 ~#
+b1100 i#
+b1100 y#
+b1100 {#
+b1001 I#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b11100 R#
+b1100 =#
+b1100 M#
+b1100 O#
+b10 :
+b10 /#
+b10 ?+
+b1010 t*
+0<
+b1011 u*
+0"+
+0e*
+b111111111111111 d*
+b111111111111111 m*
+b111111111111111 y*
+b111111111111111 $+
+b111111111111111 *+
+b111111111111111 0+
+b111111111111111 6+
+b1000101 .
+b100 #+
+1#
+#730000
+0#
+#735000
+b10000 )+
+b10000 '+
+b10000 (+
+b10000 /+
+b1000 -+
+b1000 .+
+b10000 5+
+b1000 3+
+b1000 4+
+b10000 ;+
+b1000010000100010000 {*
+b1000 9+
+b1000 :+
+b101001 S#
+b101001 !$
+b1111111111111111 %+
+b1010101010101010 ++
+b1100110011001100 1+
+b1111000011110000 7+
+0$$
+b1100 A#
+b1100 m#
+b1111111111111111 d*
+b1111111111111111 m*
+b1111111111111111 y*
+b1111111111111111 $+
+b1111111111111111 *+
+b1111111111111111 0+
+b1111111111111111 6+
+1"+
+b111 f*
+b111 n*
+b111 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b101 =
+b101 j*
+b101 s*
+b101 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b1111 =#
+b1111 M#
+b1111 O#
+b10 <#
+b10 K#
+b10 P#
+b1 C#
+b101001 R#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b10001 I#
+b1111 i#
+b1111 y#
+b1111 {#
+b10 h#
+b10 w#
+b10 |#
+b1 o#
+b101001 ~#
+b11100 d#
+b11100 r#
+b11100 v#
+b11100 "$
+b10001 u#
+b110 @
+b1000110 .
+b100 #+
+1#
+#740000
+0#
+#745000
+b111001 !$
+b111001 S#
+b1001 m#
+1Q#
+1D
+b1001 A#
+b101 #$
+b101 '$
+1$$
+b111 @
+b11100 u#
+b101001 d#
+b101001 r#
+b101001 v#
+b101001 "$
+b1101 o#
+b111001 ~#
+b10010 i#
+b10010 y#
+b10010 {#
+1G#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+b1101 C#
+b111001 R#
+b10010 =#
+b10010 M#
+b10010 O#
+b10100000 ;
+b10100000 0#
+b10100000 >+
+b10 :
+b10 /#
+b10 ?+
+b1011 t*
+0<
+b1100 u*
+0"+
+0e*
+b1000111 .
+b100 #+
+1#
+#750000
+0#
+#755000
+1B
+b10010 S#
+b1001011 !$
+b1 7
+b1 )#
+1!
+1'#
+b0 ,#
+b10001 +#
+0F
+0$$
+b0 A#
+0Q#
+0D
+1}#
+1N
+b1 6
+b1 &#
+1E
+1K
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b111 =
+b111 j*
+b111 s*
+b111 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b10101 =#
+b10101 M#
+b10101 O#
+b11 <#
+b11 K#
+b11 P#
+b10110 C#
+b10010 R#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+0;#
+06#
+09#
+b101001 I#
+b10101 i#
+b10101 y#
+b10101 {#
+b11 h#
+b11 w#
+b11 |#
+b10110 o#
+b1001011 ~#
+b111001 d#
+b111001 r#
+b111001 v#
+b111001 "$
+1s#
+b1 t#
+1g#
+b10 9
+b10 .#
+1b#
+1e#
+b101001 u#
+b1000 @
+b1001000 .
+b100 #+
+1#
+#760000
+0#
+#765000
+b10100 !$
+b101010 S#
+1L
+0B
+0}#
+0N
+b0 m#
+b10 A#
+b111 #$
+b111 '$
+1$$
+0P
+b1 "
+b1 5
+b1 *#
+b0 ,#
+b10001 +#
+1'#
+1!
+b10 7
+b10 )#
+1F
+b1001 @
+0g#
+b0 9
+b0 .#
+0b#
+0e#
+b111001 u#
+0j#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b11111 o#
+b100 h#
+b100 w#
+b100 |#
+b10100 ~#
+b11000 i#
+b11000 y#
+b11000 {#
+b0 I#
+1>#
+b10010 8#
+b10010 F#
+b10010 J#
+b10010 T#
+b0 <#
+b0 K#
+b0 P#
+b101010 R#
+b11000 =#
+b11000 M#
+b11000 O#
+b11100000 ;
+b11100000 0#
+b11100000 >+
+b10 :
+b10 /#
+b10 ?+
+b1100 t*
+0<
+b1101 u*
+0"+
+0e*
+1O
+1U
+bx00010000 8
+b1 Q
+b1 S
+b1 T
+b10 6
+b10 &#
+0E
+0K
+b1001001 .
+b100 #+
+b101 /
+1#
+#770000
+0#
+#775000
+b1000011 S#
+b101111 !$
+0L
+1P
+0$$
+b1010 A#
+b100 m#
+b1 ,#
+b10001 +#
+0'#
+b0 "
+b0 5
+b0 *#
+0!
+b0 7
+b0 )#
+b0 6
+b0 &#
+0O
+0U
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b1000 =
+b1000 j*
+b1000 s*
+b1000 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b11011 =#
+b11011 M#
+b11011 O#
+b10 <#
+b10 K#
+b10 P#
+b11000 C#
+b1000011 R#
+b101010 8#
+b101010 F#
+b101010 J#
+b101010 T#
+b10010 I#
+b11011 i#
+b11011 y#
+b11011 {#
+b0 h#
+b0 w#
+b0 |#
+b101111 ~#
+1j#
+b10100 d#
+b10100 r#
+b10100 v#
+b10100 "$
+b0 u#
+b1 (#
+b1010 @
+b1001010 .
+b100 #+
+b110 /
+1#
+#780000
+0#
+#785000
+b1001011 !$
+b1011110 S#
+b1111 m#
+b11 A#
+b1000 #$
+b1000 '$
+1$$
+b1011 @
+b10100 u#
+b101111 d#
+b101111 r#
+b101111 v#
+b101111 "$
+b100011 o#
+b10 h#
+b10 w#
+b10 |#
+b1001011 ~#
+b11110 i#
+b11110 y#
+b11110 {#
+b101010 I#
+b1000011 8#
+b1000011 F#
+b1000011 J#
+b1000011 T#
+b100010 C#
+b11 <#
+b11 K#
+b11 P#
+b1011110 R#
+b11110 =#
+b11110 M#
+b11110 O#
+b100000000 ;
+b100000000 0#
+b100000000 >+
+b10 :
+b10 /#
+b10 ?+
+b1101 t*
+0<
+b1110 u*
+0"+
+0e*
+b1001011 .
+b100 #+
+1#
+#790000
+0#
+#795000
+b1111010 S#
+b1101001 !$
+0$$
+b1110 A#
+b1011 m#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b100001 =#
+b100001 M#
+b100001 O#
+b101 <#
+b101 K#
+b101 P#
+b100101 C#
+b1111010 R#
+b1011110 8#
+b1011110 F#
+b1011110 J#
+b1011110 T#
+b1000011 I#
+b100001 i#
+b100001 y#
+b100001 {#
+b11 h#
+b11 w#
+b11 |#
+b110010 o#
+b1101001 ~#
+b1001011 d#
+b1001011 r#
+b1001011 v#
+b1001011 "$
+b101111 u#
+b1100 @
+b1001100 .
+b100 #+
+1#
+#800000
+0#
+#805000
+b10001000 !$
+b10011000 S#
+b1001 m#
+b1010 A#
+1$$
+b1101 @
+b1001011 u#
+b1101001 d#
+b1101001 r#
+b1101001 v#
+b1101001 "$
+b111101 o#
+b101 h#
+b101 w#
+b101 |#
+b10001000 ~#
+b100100 i#
+b100100 y#
+b100100 {#
+b1011110 I#
+b1111010 8#
+b1111010 F#
+b1111010 J#
+b1111010 T#
+b110011 C#
+b110 <#
+b110 K#
+b110 P#
+b10011000 R#
+b100100 =#
+b100100 M#
+b100100 O#
+b10 :
+b10 /#
+b10 ?+
+b1110 t*
+0<
+b1111 u*
+0"+
+0e*
+b1001101 .
+b100 #+
+1#
+#810000
+0#
+#815000
+b10110111 S#
+b10101000 !$
+0$$
+b1000 A#
+b1000 m#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b100111 =#
+b100111 M#
+b100111 O#
+b1000 <#
+b1000 K#
+b1000 P#
+b111101 C#
+b10110111 R#
+b10011000 8#
+b10011000 F#
+b10011000 J#
+b10011000 T#
+b1111010 I#
+b100111 i#
+b100111 y#
+b100111 {#
+b111 h#
+b111 w#
+b111 |#
+b1000110 o#
+b10101000 ~#
+b10001000 d#
+b10001000 r#
+b10001000 v#
+b10001000 "$
+b1101001 u#
+b1110 @
+b1001110 .
+b100 #+
+1#
+#820000
+0#
+#825000
+b11001001 !$
+b11010111 S#
+b111 A#
+1$$
+b1111 @
+b10001000 u#
+b10101000 d#
+b10101000 r#
+b10101000 v#
+b10101000 "$
+b1001110 o#
+b1001 h#
+b1001 w#
+b1001 |#
+b11001001 ~#
+b101010 i#
+b101010 y#
+b101010 {#
+b10011000 I#
+b10110111 8#
+b10110111 F#
+b10110111 J#
+b10110111 T#
+b1000101 C#
+b1010 <#
+b1010 K#
+b1010 P#
+b11010111 R#
+b101010 =#
+b101010 M#
+b101010 O#
+b10 :
+b10 /#
+b10 ?+
+b1111 t*
+0<
+0g*
+b0 u*
+0"+
+0e*
+b1001111 .
+b100 #+
+1#
+#830000
+0#
+#835000
+b11111000 S#
+b11101011 !$
+0$$
+b1001 m#
+1Q#
+1}#
+1K$
+1w$
+1E%
+1q%
+1?&
+1k&
+19'
+1e'
+13(
+1_(
+1-)
+1Y)
+1'*
+1S*
+1<
+b0 :
+b0 /#
+b0 ?+
+b101101 =#
+b101101 M#
+b101101 O#
+b1100 <#
+b1100 K#
+b1100 P#
+b1001100 C#
+b11111000 R#
+b11010111 8#
+b11010111 F#
+b11010111 J#
+b11010111 T#
+b10110111 I#
+b101101 i#
+b101101 y#
+b101101 {#
+b1011 h#
+b1011 w#
+b1011 |#
+b1010110 o#
+b11101011 ~#
+b11001001 d#
+b11001001 r#
+b11001001 v#
+b11001001 "$
+b10101000 u#
+1A
+b0 @
+b1010000 .
+1#
+#840000
+0#
+#845000
+b0 !$
+b0 S#
+0Q#
+0}#
+0K$
+0w$
+0E%
+0q%
+0?&
+0k&
+09'
+0e'
+03(
+0_(
+0-)
+0Y)
+0'*
+0S*
+b0 m#
+b0 A#
+b0 #$
+b0 '$
+b1 @
+0A
+0s#
+b11001001 u#
+0j#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b0 o#
+b1101 h#
+b1101 w#
+b1101 |#
+b11111111111110011 ~#
+b0 i#
+b0 y#
+b0 {#
+0G#
+b11010111 I#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+b0 C#
+b1110 <#
+b1110 K#
+b1110 P#
+b11111111111110010 R#
+b0 =#
+b0 M#
+b0 O#
+b0 ;
+b0 0#
+b0 >+
+1g*
+b0 t*
+0<
+b1010001 .
+1#
+#850000
+0#
+#855000
+b11 S#
+b11 !$
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b11 =#
+b11 M#
+b11 O#
+b11 R#
+b0 <#
+b0 K#
+b0 P#
+b0 I#
+b11 i#
+b11 y#
+b11 {#
+b11 ~#
+b0 h#
+b0 w#
+b0 |#
+b0 u#
+b10 @
+b1010010 .
+b100 #+
+1#
+#860000
+0#
+#865000
+b1001 !$
+b1001 S#
+b11 m#
+b11 A#
+b11 @
+b11 d#
+b11 r#
+b11 v#
+b11 "$
+b1001 ~#
+b110 i#
+b110 y#
+b110 {#
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1001 R#
+b110 =#
+b110 M#
+b110 O#
+b1 u*
+0"+
+0e*
+b1010011 .
+b100 #+
+1#
+#870000
+0#
+#875000
+b10001 S#
+b10001 !$
+b1001 A#
+b1001 m#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b1001 =#
+b1001 M#
+b1001 O#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b11 I#
+b1001 i#
+b1001 y#
+b1001 {#
+b1 h#
+b1 w#
+b1 |#
+b10001 ~#
+b1001 d#
+b1001 r#
+b1001 v#
+b1001 "$
+b11 u#
+b100 @
+b1010100 .
+b100 #+
+1#
+#880000
+0#
+#885000
+b11100 !$
+b11100 S#
+b1 m#
+b1 A#
+b1000 #$
+b1000 '$
+1$$
+b101 @
+b1001 u#
+1j#
+b10001 d#
+b10001 r#
+b10001 v#
+b10001 "$
+b11100 ~#
+b1100 i#
+b1100 y#
+b1100 {#
+b1001 I#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b11100 R#
+b1100 =#
+b1100 M#
+b1100 O#
+b100000000 ;
+b100000000 0#
+b100000000 >+
+b10 :
+b10 /#
+b10 ?+
+b1 t*
+0<
+b10 u*
+0"+
+0e*
+b1010101 .
+b100 #+
+1#
+#890000
+0#
+#895000
+b101001 S#
+b101001 !$
+0$$
+b1100 A#
+b1100 m#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b1111 =#
+b1111 M#
+b1111 O#
+b10 <#
+b10 K#
+b10 P#
+b1 C#
+b101001 R#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b10001 I#
+b1111 i#
+b1111 y#
+b1111 {#
+b10 h#
+b10 w#
+b10 |#
+b1 o#
+b101001 ~#
+b11100 d#
+b11100 r#
+b11100 v#
+b11100 "$
+b10001 u#
+b110 @
+b1010110 .
+b100 #+
+1#
+#900000
+0#
+#905000
+b111001 !$
+b111001 S#
+b1001 m#
+1Q#
+1D
+b1001 A#
+1$$
+b111 @
+b11100 u#
+b101001 d#
+b101001 r#
+b101001 v#
+b101001 "$
+b1101 o#
+b111001 ~#
+b10010 i#
+b10010 y#
+b10010 {#
+1G#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+b1101 C#
+b111001 R#
+b10010 =#
+b10010 M#
+b10010 O#
+b10 :
+b10 /#
+b10 ?+
+b10 t*
+0<
+b11 u*
+0"+
+0e*
+b1010111 .
+b100 #+
+1#
+#910000
+0#
+#915000
+1B
+b10010 S#
+b1001011 !$
+b1 7
+b1 )#
+1!
+1'#
+b1 ,#
+b10001 +#
+0F
+0$$
+b0 A#
+0Q#
+0D
+1}#
+1N
+b1 6
+b1 &#
+1E
+1K
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b10101 =#
+b10101 M#
+b10101 O#
+b11 <#
+b11 K#
+b11 P#
+b10110 C#
+b10010 R#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+0;#
+06#
+09#
+b101001 I#
+b10101 i#
+b10101 y#
+b10101 {#
+b11 h#
+b11 w#
+b11 |#
+b10110 o#
+b1001011 ~#
+b111001 d#
+b111001 r#
+b111001 v#
+b111001 "$
+1s#
+1g#
+b10 9
+b10 .#
+1b#
+1e#
+b101001 u#
+b1000 @
+b1011000 .
+b100 #+
+1#
+#920000
+0#
+#925000
+b10100 !$
+b101010 S#
+1L
+0B
+0}#
+0N
+b0 m#
+b10 A#
+1$$
+0P
+b0 ,#
+b1 "
+b1 5
+b1 *#
+b10001 +#
+1'#
+1!
+b10 7
+b10 )#
+1F
+b1001 @
+b0 (#
+0g#
+b0 9
+b0 .#
+0b#
+0e#
+b111001 u#
+0j#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b11111 o#
+b100 h#
+b100 w#
+b100 |#
+b10100 ~#
+b11000 i#
+b11000 y#
+b11000 {#
+b0 I#
+1>#
+b10010 8#
+b10010 F#
+b10010 J#
+b10010 T#
+b0 <#
+b0 K#
+b0 P#
+b101010 R#
+b11000 =#
+b11000 M#
+b11000 O#
+b10 :
+b10 /#
+b10 ?+
+b11 t*
+0<
+b100 u*
+0"+
+0e*
+1O
+1U
+b10 6
+b10 &#
+0E
+0K
+b1011001 .
+b100 #+
+b111 /
+1#
+#930000
+0#
+#935000
+b1000011 S#
+b101111 !$
+0L
+1P
+0$$
+b1010 A#
+b100 m#
+b1 ,#
+b10001 +#
+0'#
+b0 "
+b0 5
+b0 *#
+0!
+b0 7
+b0 )#
+b0 6
+b0 &#
+0O
+0U
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b11011 =#
+b11011 M#
+b11011 O#
+b10 <#
+b10 K#
+b10 P#
+b11000 C#
+b1000011 R#
+b101010 8#
+b101010 F#
+b101010 J#
+b101010 T#
+b10010 I#
+b11011 i#
+b11011 y#
+b11011 {#
+b0 h#
+b0 w#
+b0 |#
+b101111 ~#
+1j#
+b10100 d#
+b10100 r#
+b10100 v#
+b10100 "$
+b0 u#
+b1 (#
+b1010 @
+b1011010 .
+b100 #+
+b1000 /
+1#
+#940000
+0#
+#945000
+b1001011 !$
+b1011110 S#
+b1111 m#
+b11 A#
+1$$
+b1011 @
+b10100 u#
+b101111 d#
+b101111 r#
+b101111 v#
+b101111 "$
+b100011 o#
+b10 h#
+b10 w#
+b10 |#
+b1001011 ~#
+b11110 i#
+b11110 y#
+b11110 {#
+b101010 I#
+b1000011 8#
+b1000011 F#
+b1000011 J#
+b1000011 T#
+b100010 C#
+b11 <#
+b11 K#
+b11 P#
+b1011110 R#
+b11110 =#
+b11110 M#
+b11110 O#
+b10 :
+b10 /#
+b10 ?+
+b100 t*
+0<
+b101 u*
+0"+
+0e*
+b1011011 .
+b100 #+
+1#
+#950000
+0#
+#955000
+b1111010 S#
+b1101001 !$
+0$$
+b1110 A#
+b1011 m#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b100001 =#
+b100001 M#
+b100001 O#
+b101 <#
+b101 K#
+b101 P#
+b100101 C#
+b1111010 R#
+b1011110 8#
+b1011110 F#
+b1011110 J#
+b1011110 T#
+b1000011 I#
+b100001 i#
+b100001 y#
+b100001 {#
+b11 h#
+b11 w#
+b11 |#
+b110010 o#
+b1101001 ~#
+b1001011 d#
+b1001011 r#
+b1001011 v#
+b1001011 "$
+b101111 u#
+b1100 @
+b1011100 .
+b100 #+
+1#
+#960000
+0#
+#965000
+b10001000 !$
+b10011000 S#
+b1001 m#
+b1010 A#
+1$$
+b1101 @
+b1001011 u#
+b1101001 d#
+b1101001 r#
+b1101001 v#
+b1101001 "$
+b111101 o#
+b101 h#
+b101 w#
+b101 |#
+b10001000 ~#
+b100100 i#
+b100100 y#
+b100100 {#
+b1011110 I#
+b1111010 8#
+b1111010 F#
+b1111010 J#
+b1111010 T#
+b110011 C#
+b110 <#
+b110 K#
+b110 P#
+b10011000 R#
+b100100 =#
+b100100 M#
+b100100 O#
+b10 :
+b10 /#
+b10 ?+
+b101 t*
+0<
+b110 u*
+0"+
+0e*
+b1011101 .
+b100 #+
+1#
+#970000
+0#
+#975000
+b10110111 S#
+b10101000 !$
+0$$
+b1000 A#
+b1000 m#
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b100111 =#
+b100111 M#
+b100111 O#
+b1000 <#
+b1000 K#
+b1000 P#
+b111101 C#
+b10110111 R#
+b10011000 8#
+b10011000 F#
+b10011000 J#
+b10011000 T#
+b1111010 I#
+b100111 i#
+b100111 y#
+b100111 {#
+b111 h#
+b111 w#
+b111 |#
+b1000110 o#
+b10101000 ~#
+b10001000 d#
+b10001000 r#
+b10001000 v#
+b10001000 "$
+b1101001 u#
+b1110 @
+b1011110 .
+b100 #+
+1#
+#980000
+0#
+#985000
+b11001001 !$
+b11010111 S#
+b10000 )+
+b1000010000100001111 {*
+b1111 '+
+b1111 (+
+b111 A#
+1$$
+b1111111111111110 %+
+b1111 @
+b10001000 u#
+b10101000 d#
+b10101000 r#
+b10101000 v#
+b10101000 "$
+b1001110 o#
+b1001 h#
+b1001 w#
+b1001 |#
+b11001001 ~#
+b101010 i#
+b101010 y#
+b101010 {#
+b10011000 I#
+b10110111 8#
+b10110111 F#
+b10110111 J#
+b10110111 T#
+b1000101 C#
+b1010 <#
+b1010 K#
+b1010 P#
+b11010111 R#
+b101010 =#
+b101010 M#
+b101010 O#
+b10 :
+b10 /#
+b10 ?+
+b110 t*
+0<
+b111 u*
+0"+
+0e*
+b1111111111111110 d*
+b1111111111111110 m*
+b1111111111111110 y*
+b1111111111111110 $+
+b1111111111111110 *+
+b1111111111111110 0+
+b1111111111111110 6+
+b1011111 .
+b100 #+
+0)
+1#
+#990000
+0#
+#995000
+b10000 )+
+b1110 '+
+b1110 (+
+b10000 /+
+b1000010000011101110 {*
+b111 -+
+b111 .+
+b11111000 S#
+b11101011 !$
+b1111111111111100 %+
+b1010101010101000 ++
+0$$
+b1001 m#
+1Q#
+1}#
+1K$
+1w$
+1E%
+1q%
+1?&
+1k&
+19'
+1e'
+13(
+1_(
+1-)
+1Y)
+1'*
+1S*
+b1111111111111100 d*
+b1111111111111100 m*
+b1111111111111100 y*
+b1111111111111100 $+
+b1111111111111100 *+
+b1111111111111100 0+
+b1111111111111100 6+
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b101101 =#
+b101101 M#
+b101101 O#
+b1100 <#
+b1100 K#
+b1100 P#
+b1001100 C#
+b11111000 R#
+b11010111 8#
+b11010111 F#
+b11010111 J#
+b11010111 T#
+b10110111 I#
+b101101 i#
+b101101 y#
+b101101 {#
+b1011 h#
+b1011 w#
+b1011 |#
+b1010110 o#
+b11101011 ~#
+b11001001 d#
+b11001001 r#
+b11001001 v#
+b11001001 "$
+b10101000 u#
+1A
+b0 @
+b1100000 .
+b100 #+
+1#
+#1000000
+0#
+#1005000
+b0 !$
+b0 S#
+b10000 )+
+b1101 '+
+b1101 (+
+b10000 5+
+b1000001110011101101 {*
+b111 3+
+b111 4+
+0Q#
+0}#
+0K$
+0w$
+0E%
+0q%
+0?&
+0k&
+09'
+0e'
+03(
+0_(
+0-)
+0Y)
+0'*
+0S*
+b0 m#
+b0 A#
+b0 #$
+b0 '$
+b1111111111111000 %+
+b1100110011001000 1+
+b1 @
+0A
+0s#
+b11001001 u#
+0j#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b0 o#
+b1101 h#
+b1101 w#
+b1101 |#
+b11111111111110011 ~#
+b0 i#
+b0 y#
+b0 {#
+0G#
+b11010111 I#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+b0 C#
+b1110 <#
+b1110 K#
+b1110 P#
+b11111111111110010 R#
+b0 =#
+b0 M#
+b0 O#
+b0 ;
+b0 0#
+b0 >+
+b111 t*
+0<
+b1000 u*
+0"+
+0e*
+b1111111111111000 d*
+b1111111111111000 m*
+b1111111111111000 y*
+b1111111111111000 $+
+b1111111111111000 *+
+b1111111111111000 0+
+b1111111111111000 6+
+b1100001 .
+b100 #+
+1#
+#1010000
+0#
+#1015000
+b10000 )+
+b1100 '+
+b1100 (+
+b10000 /+
+b110 -+
+b110 .+
+b10000 5+
+b1000001100011001100 {*
+b110 3+
+b110 4+
+b11 S#
+b11 !$
+b1111111111110000 %+
+b1010101010100000 ++
+b1100110011000000 1+
+b1111111111110000 d*
+b1111111111110000 m*
+b1111111111110000 y*
+b1111111111110000 $+
+b1111111111110000 *+
+b1111111111110000 0+
+b1111111111110000 6+
+1"+
+b1000 f*
+b1000 n*
+b1000 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b11 =#
+b11 M#
+b11 O#
+b11 R#
+b0 <#
+b0 K#
+b0 P#
+b0 I#
+b11 i#
+b11 y#
+b11 {#
+b11 ~#
+b0 h#
+b0 w#
+b0 |#
+b0 u#
+b10 @
+b1100010 .
+b100 #+
+1#
+#1020000
+0#
+#1025000
+b1001 !$
+b1001 S#
+b10000 )+
+b1011 '+
+b1011 (+
+b10000 ;+
+b111001100011001011 {*
+b111 9+
+b111 :+
+b11 m#
+b11 A#
+b1000 #$
+b1000 '$
+1$$
+b1111111111100000 %+
+b1111000011100000 7+
+b11 @
+b11 d#
+b11 r#
+b11 v#
+b11 "$
+b1001 ~#
+b110 i#
+b110 y#
+b110 {#
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1001 R#
+b110 =#
+b110 M#
+b110 O#
+b100000000 ;
+b100000000 0#
+b100000000 >+
+b10 :
+b10 /#
+b10 ?+
+b1000 t*
+0<
+b1001 u*
+0"+
+0e*
+b1111111111100000 d*
+b1111111111100000 m*
+b1111111111100000 y*
+b1111111111100000 $+
+b1111111111100000 *+
+b1111111111100000 0+
+b1111111111100000 6+
+b1100011 .
+b100 #+
+1#
+#1030000
+0#
+#1035000
+b10000 )+
+b1010 '+
+b1010 (+
+b10000 /+
+b101 -+
+b101 .+
+b10000 ;+
+b110001100010101010 {*
+b110 9+
+b110 :+
+b10001 S#
+b10001 !$
+b1111111111000000 %+
+b1010101010000000 ++
+b1111000011000000 7+
+0$$
+b1001 A#
+b1001 m#
+b1111111111000000 d*
+b1111111111000000 m*
+b1111111111000000 y*
+b1111111111000000 $+
+b1111111111000000 *+
+b1111111111000000 0+
+b1111111111000000 6+
+1"+
+b111 f*
+b111 n*
+b111 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b1001 =#
+b1001 M#
+b1001 O#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b11 I#
+b1001 i#
+b1001 y#
+b1001 {#
+b1 h#
+b1 w#
+b1 |#
+b10001 ~#
+b1001 d#
+b1001 r#
+b1001 v#
+b1001 "$
+b11 u#
+b100 @
+b1100100 .
+b100 #+
+1#
+#1040000
+0#
+#1045000
+b11100 !$
+b11100 S#
+b10000 )+
+b1001 '+
+b1001 (+
+b10000 5+
+b101 3+
+b101 4+
+b10000 ;+
+b101001010010101001 {*
+b101 9+
+b101 :+
+b1 m#
+b1 A#
+1$$
+b1111111110000000 %+
+b1100110010000000 1+
+b1111000010000000 7+
+b101 @
+b1001 u#
+1j#
+b10001 d#
+b10001 r#
+b10001 v#
+b10001 "$
+b11100 ~#
+b1100 i#
+b1100 y#
+b1100 {#
+b1001 I#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b11100 R#
+b1100 =#
+b1100 M#
+b1100 O#
+b10 :
+b10 /#
+b10 ?+
+b1001 t*
+0<
+b1010 u*
+0"+
+0e*
+b1111111110000000 d*
+b1111111110000000 m*
+b1111111110000000 y*
+b1111111110000000 $+
+b1111111110000000 *+
+b1111111110000000 0+
+b1111111110000000 6+
+b1100101 .
+b100 #+
+1#
+#1050000
+0#
+#1055000
+b10000 )+
+b1000 '+
+b1000 (+
+b10000 /+
+b100 -+
+b100 .+
+b10000 5+
+b100 3+
+b100 4+
+b10000 ;+
+b100001000010001000 {*
+b100 9+
+b100 :+
+b101001 S#
+b101001 !$
+b1111111100000000 %+
+b1010101000000000 ++
+b1100110000000000 1+
+b1111000000000000 7+
+0$$
+b1100 A#
+b1100 m#
+b1111111100000000 d*
+b1111111100000000 m*
+b1111111100000000 y*
+b1111111100000000 $+
+b1111111100000000 *+
+b1111111100000000 0+
+b1111111100000000 6+
+1"+
+b101 f*
+b101 n*
+b101 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b111 =
+b111 j*
+b111 s*
+b111 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b1111 =#
+b1111 M#
+b1111 O#
+b10 <#
+b10 K#
+b10 P#
+b1 C#
+b101001 R#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b10001 I#
+b1111 i#
+b1111 y#
+b1111 {#
+b10 h#
+b10 w#
+b10 |#
+b1 o#
+b101001 ~#
+b11100 d#
+b11100 r#
+b11100 v#
+b11100 "$
+b10001 u#
+b110 @
+b1100110 .
+b100 #+
+1#
+#1060000
+0#
+#1065000
+b111001 !$
+b111001 S#
+b10000 )+
+b100001000010000111 {*
+b111 '+
+b111 (+
+b1001 m#
+1Q#
+1D
+b1001 A#
+b111 #$
+b111 '$
+1$$
+b1111111000000000 %+
+b111 @
+b11100 u#
+b101001 d#
+b101001 r#
+b101001 v#
+b101001 "$
+b1101 o#
+b111001 ~#
+b10010 i#
+b10010 y#
+b10010 {#
+1G#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+b1101 C#
+b111001 R#
+b10010 =#
+b10010 M#
+b10010 O#
+b11100000 ;
+b11100000 0#
+b11100000 >+
+b10 :
+b10 /#
+b10 ?+
+b1010 t*
+0<
+b1011 u*
+0"+
+0e*
+b1111111000000000 d*
+b1111111000000000 m*
+b1111111000000000 y*
+b1111111000000000 $+
+b1111111000000000 *+
+b1111111000000000 0+
+b1111111000000000 6+
+b1100111 .
+b100 #+
+1#
+#1070000
+0#
+#1075000
+1B
+b10000 )+
+b110 '+
+b110 (+
+b10000 /+
+b100001000001100110 {*
+b11 -+
+b11 .+
+b10010 S#
+b1001011 !$
+b1 7
+b1 )#
+1!
+1'#
+b1 ,#
+b10001 +#
+0F
+b1111110000000000 %+
+b1010100000000000 ++
+0$$
+b0 A#
+0Q#
+0D
+1}#
+1N
+b1 6
+b1 &#
+1E
+1K
+b1111110000000000 d*
+b1111110000000000 m*
+b1111110000000000 y*
+b1111110000000000 $+
+b1111110000000000 *+
+b1111110000000000 0+
+b1111110000000000 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b101 =
+b101 j*
+b101 s*
+b101 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b10101 =#
+b10101 M#
+b10101 O#
+b11 <#
+b11 K#
+b11 P#
+b10110 C#
+b10010 R#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+0;#
+06#
+09#
+b101001 I#
+b10101 i#
+b10101 y#
+b10101 {#
+b11 h#
+b11 w#
+b11 |#
+b10110 o#
+b1001011 ~#
+b111001 d#
+b111001 r#
+b111001 v#
+b111001 "$
+1s#
+1g#
+b10 9
+b10 .#
+1b#
+1e#
+b101001 u#
+b1000 @
+b1101000 .
+b100 #+
+1#
+#1080000
+0#
+#1085000
+b10100 !$
+b101010 S#
+b10000 )+
+b101 '+
+b101 (+
+b10000 5+
+b100000110001100101 {*
+b11 3+
+b11 4+
+1L
+0B
+0}#
+0N
+b0 m#
+b10 A#
+b101 #$
+b101 '$
+1$$
+b1111100000000000 %+
+b1100100000000000 1+
+0P
+b0 ,#
+b1 "
+b1 5
+b1 *#
+b10001 +#
+1'#
+1!
+b10 7
+b10 )#
+1F
+b1001 @
+b0 (#
+0g#
+b0 9
+b0 .#
+0b#
+0e#
+b111001 u#
+0j#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b11111 o#
+b100 h#
+b100 w#
+b100 |#
+b10100 ~#
+b11000 i#
+b11000 y#
+b11000 {#
+b0 I#
+1>#
+b10010 8#
+b10010 F#
+b10010 J#
+b10010 T#
+b0 <#
+b0 K#
+b0 P#
+b101010 R#
+b11000 =#
+b11000 M#
+b11000 O#
+b10100000 ;
+b10100000 0#
+b10100000 >+
+b10 :
+b10 /#
+b10 ?+
+b1011 t*
+0<
+b1100 u*
+0"+
+0e*
+b1111100000000000 d*
+b1111100000000000 m*
+b1111100000000000 y*
+b1111100000000000 $+
+b1111100000000000 *+
+b1111100000000000 0+
+b1111100000000000 6+
+1O
+1U
+b10 6
+b10 &#
+0E
+0K
+b1101001 .
+b100 #+
+b1001 /
+1#
+#1090000
+0#
+#1095000
+b1001 |*
+b10000 )+
+b100 '+
+b100 (+
+b10000 /+
+b10 -+
+b10 .+
+b10000 5+
+b100000100001000100 {*
+b10 3+
+b10 4+
+b1000011 S#
+b101111 !$
+0L
+1P
+b1111000000000000 %+
+b1010000000000000 ++
+b1100000000000000 1+
+0$$
+b1010 A#
+b100 m#
+b1 ,#
+b10001 +#
+0'#
+b0 "
+b0 5
+b0 *#
+0!
+b0 7
+b0 )#
+b0 6
+b0 &#
+0O
+0U
+b1111000000000000 d*
+b1111000000000000 m*
+b1111000000000000 y*
+b1111000000000000 $+
+b1111000000000000 *+
+b1111000000000000 0+
+b1111000000000000 6+
+1"+
+b100 f*
+b100 n*
+b100 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+b100 =
+b100 j*
+b100 s*
+b100 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b11011 =#
+b11011 M#
+b11011 O#
+b10 <#
+b10 K#
+b10 P#
+b11000 C#
+b1000011 R#
+b101010 8#
+b101010 F#
+b101010 J#
+b101010 T#
+b10010 I#
+b11011 i#
+b11011 y#
+b11011 {#
+b0 h#
+b0 w#
+b0 |#
+b101111 ~#
+1j#
+b10100 d#
+b10100 r#
+b10100 v#
+b10100 "$
+b0 u#
+b1 (#
+b1010 @
+b1101010 .
+b100 #+
+b1010 /
+1#
+#1100000
+0#
+#1105000
+b1001011 !$
+b1011110 S#
+b10000 )+
+b11 '+
+b11 (+
+b10000 ;+
+b11000100001000011 {*
+b11 9+
+b11 :+
+b1111 m#
+b11 A#
+b100 #$
+b100 '$
+1$$
+b1110000000000000 %+
+b1110000000000000 7+
+b1011 @
+b10100 u#
+b101111 d#
+b101111 r#
+b101111 v#
+b101111 "$
+b100011 o#
+b10 h#
+b10 w#
+b10 |#
+b1001011 ~#
+b11110 i#
+b11110 y#
+b11110 {#
+b101010 I#
+b1000011 8#
+b1000011 F#
+b1000011 J#
+b1000011 T#
+b100010 C#
+b11 <#
+b11 K#
+b11 P#
+b1011110 R#
+b11110 =#
+b11110 M#
+b11110 O#
+b10000000 ;
+b10000000 0#
+b10000000 >+
+b10 :
+b10 /#
+b10 ?+
+b1100 t*
+0<
+b1101 u*
+0"+
+0e*
+b1110000000000000 d*
+b1110000000000000 m*
+b1110000000000000 y*
+b1110000000000000 $+
+b1110000000000000 *+
+b1110000000000000 0+
+b1110000000000000 6+
+b1101011 .
+b100 #+
+1#
+#1110000
+0#
+#1115000
+b0 |*
+b10000 )+
+b10 '+
+b10 (+
+b10000 /+
+b1 -+
+b1 .+
+b10000 ;+
+b10000100000100010 {*
+b10 9+
+b10 :+
+b1111010 S#
+b1101001 !$
+b1100000000000000 %+
+b1000000000000000 ++
+b1100000000000000 7+
+0$$
+b1110 A#
+b1011 m#
+b1100000000000000 d*
+b1100000000000000 m*
+b1100000000000000 y*
+b1100000000000000 $+
+b1100000000000000 *+
+b1100000000000000 0+
+b1100000000000000 6+
+1"+
+b11 f*
+b11 n*
+b11 !+
+b111 i*
+b111 p*
+b111 }*
+1e*
+1<
+b0 :
+b0 /#
+b0 ?+
+b100001 =#
+b100001 M#
+b100001 O#
+b101 <#
+b101 K#
+b101 P#
+b100101 C#
+b1111010 R#
+b1011110 8#
+b1011110 F#
+b1011110 J#
+b1011110 T#
+b1000011 I#
+b100001 i#
+b100001 y#
+b100001 {#
+b11 h#
+b11 w#
+b11 |#
+b110010 o#
+b1101001 ~#
+b1001011 d#
+b1001011 r#
+b1001011 v#
+b1001011 "$
+b101111 u#
+b1100 @
+b1101100 .
+b100 #+
+1#
+#1120000
+0#
+#1125000
+b10001000 !$
+b10011000 S#
+b10000 )+
+b1 '+
+b1 (+
+b10000 5+
+b1 3+
+b1 4+
+b10000 ;+
+b1000010000100001 {*
+b1 9+
+b1 :+
+b1001 m#
+b1010 A#
+1$$
+b1000000000000000 %+
+b1000000000000000 1+
+b1000000000000000 7+
+b1101 @
+b1001011 u#
+b1101001 d#
+b1101001 r#
+b1101001 v#
+b1101001 "$
+b111101 o#
+b101 h#
+b101 w#
+b101 |#
+b10001000 ~#
+b100100 i#
+b100100 y#
+b100100 {#
+b1011110 I#
+b1111010 8#
+b1111010 F#
+b1111010 J#
+b1111010 T#
+b110011 C#
+b110 <#
+b110 K#
+b110 P#
+b10011000 R#
+b100100 =#
+b100100 M#
+b100100 O#
+b10 :
+b10 /#
+b10 ?+
+b1101 t*
+0<
+b1110 u*
+0"+
+0e*
+b1000000000000000 d*
+b1000000000000000 m*
+b1000000000000000 y*
+b1000000000000000 $+
+b1000000000000000 *+
+b1000000000000000 0+
+b1000000000000000 6+
+b1101101 .
+b100 #+
+1#
+#1130000
+0#
+#1135000
+b10000 )+
+b0 '+
+b0 (+
+b10000 /+
+b0 -+
+b0 .+
+b10000 5+
+b0 3+
+b0 4+
+b10000 ;+
+b0 {*
+b0 9+
+b0 :+
+b10110111 S#
+b10101000 !$
+b0 %+
+b0 ++
+b0 1+
+b0 7+
+0$$
+b1000 A#
+b1000 m#
+b0 d*
+b0 m*
+b0 y*
+b0 $+
+b0 *+
+b0 0+
+b0 6+
+b11 =
+b11 j*
+b11 s*
+b11 =+
+1<
+b0 :
+b0 /#
+b0 ?+
+b100111 =#
+b100111 M#
+b100111 O#
+b1000 <#
+b1000 K#
+b1000 P#
+b111101 C#
+b10110111 R#
+b10011000 8#
+b10011000 F#
+b10011000 J#
+b10011000 T#
+b1111010 I#
+b100111 i#
+b100111 y#
+b100111 {#
+b111 h#
+b111 w#
+b111 |#
+b1000110 o#
+b10101000 ~#
+b10001000 d#
+b10001000 r#
+b10001000 v#
+b10001000 "$
+b1101001 u#
+b1110 @
+b1101110 .
+b100 #+
+1#
+#1140000
+0#
+#1145000
+b11001001 !$
+b11010111 S#
+b111 A#
+b11 #$
+b11 '$
+1$$
+b1111 @
+b10001000 u#
+b10101000 d#
+b10101000 r#
+b10101000 v#
+b10101000 "$
+b1001110 o#
+b1001 h#
+b1001 w#
+b1001 |#
+b11001001 ~#
+b101010 i#
+b101010 y#
+b101010 {#
+b10011000 I#
+b10110111 8#
+b10110111 F#
+b10110111 J#
+b10110111 T#
+b1000101 C#
+b1010 <#
+b1010 K#
+b1010 P#
+b11010111 R#
+b101010 =#
+b101010 M#
+b101010 O#
+b1100000 ;
+b1100000 0#
+b1100000 >+
+b10 :
+b10 /#
+b10 ?+
+b1110 t*
+0<
+b1101111 .
+b100 #+
+1#
+#1150000
+0#
+#1155000
+b11111000 S#
+b11101011 !$
+0$$
+b1001 m#
+1Q#
+1}#
+1K$
+1w$
+1E%
+1q%
+1?&
+1k&
+19'
+1e'
+13(
+1_(
+1-)
+1Y)
+1'*
+1S*
+b0 :
+b0 /#
+b0 ?+
+b101101 =#
+b101101 M#
+b101101 O#
+b1100 <#
+b1100 K#
+b1100 P#
+b1001100 C#
+b11111000 R#
+b11010111 8#
+b11010111 F#
+b11010111 J#
+b11010111 T#
+b10110111 I#
+b101101 i#
+b101101 y#
+b101101 {#
+b1011 h#
+b1011 w#
+b1011 |#
+b1010110 o#
+b11101011 ~#
+b11001001 d#
+b11001001 r#
+b11001001 v#
+b11001001 "$
+b10101000 u#
+1A
+b0 @
+b1110000 .
+b100 #+
+1#
+#1160000
+0#
+#1165000
+b0 !$
+b0 S#
+0Q#
+0}#
+0K$
+0w$
+0E%
+0q%
+0?&
+0k&
+09'
+0e'
+03(
+0_(
+0-)
+0Y)
+0'*
+0S*
+b0 m#
+b0 A#
+b0 #$
+b0 '$
+b1 @
+0A
+0s#
+b11001001 u#
+0j#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b0 o#
+b1101 h#
+b1101 w#
+b1101 |#
+b11111111111110011 ~#
+b0 i#
+b0 y#
+b0 {#
+0G#
+b11010111 I#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+b0 C#
+b1110 <#
+b1110 K#
+b1110 P#
+b11111111111110010 R#
+b0 =#
+b0 M#
+b0 O#
+b0 ;
+b0 0#
+b0 >+
+b1110001 .
+b100 #+
+1#
+#1170000
+0#
+#1175000
+b11 S#
+b11 !$
+b11 =#
+b11 M#
+b11 O#
+b11 R#
+b0 <#
+b0 K#
+b0 P#
+b0 I#
+b11 i#
+b11 y#
+b11 {#
+b11 ~#
+b0 h#
+b0 w#
+b0 |#
+b0 u#
+b10 @
+b1110010 .
+b100 #+
+1#
+#1180000
+0#
+#1185000
+b1001 !$
+b1001 S#
+b11 m#
+b11 A#
+b11 @
+b11 d#
+b11 r#
+b11 v#
+b11 "$
+b1001 ~#
+b110 i#
+b110 y#
+b110 {#
+b11 8#
+b11 F#
+b11 J#
+b11 T#
+b1001 R#
+b110 =#
+b110 M#
+b110 O#
+b1110011 .
+b100 #+
+1#
+#1190000
+0#
+#1195000
+b10001 S#
+b10001 !$
+b1001 A#
+b1001 m#
+b1001 =#
+b1001 M#
+b1001 O#
+b1 <#
+b1 K#
+b1 P#
+b10001 R#
+b1001 8#
+b1001 F#
+b1001 J#
+b1001 T#
+b11 I#
+b1001 i#
+b1001 y#
+b1001 {#
+b1 h#
+b1 w#
+b1 |#
+b10001 ~#
+b1001 d#
+b1001 r#
+b1001 v#
+b1001 "$
+b11 u#
+b100 @
+b1110100 .
+b100 #+
+1#
+#1200000
+0#
+#1205000
+b11100 !$
+b11100 S#
+b1 m#
+b1 A#
+b101 @
+b1001 u#
+1j#
+b10001 d#
+b10001 r#
+b10001 v#
+b10001 "$
+b11100 ~#
+b1100 i#
+b1100 y#
+b1100 {#
+b1001 I#
+1>#
+b10001 8#
+b10001 F#
+b10001 J#
+b10001 T#
+b11100 R#
+b1100 =#
+b1100 M#
+b1100 O#
+b1110101 .
+b100 #+
+1#
+#1210000
+0#
+#1215000
+b101001 S#
+b101001 !$
+b1100 A#
+b1100 m#
+b1111 =#
+b1111 M#
+b1111 O#
+b10 <#
+b10 K#
+b10 P#
+b1 C#
+b101001 R#
+b11100 8#
+b11100 F#
+b11100 J#
+b11100 T#
+b10001 I#
+b1111 i#
+b1111 y#
+b1111 {#
+b10 h#
+b10 w#
+b10 |#
+b1 o#
+b101001 ~#
+b11100 d#
+b11100 r#
+b11100 v#
+b11100 "$
+b10001 u#
+b110 @
+b1110110 .
+b100 #+
+1#
+#1220000
+0#
+#1225000
+b111001 !$
+b111001 S#
+b1001 m#
+1Q#
+1D
+b1001 A#
+b111 @
+b11100 u#
+b101001 d#
+b101001 r#
+b101001 v#
+b101001 "$
+b1101 o#
+b111001 ~#
+b10010 i#
+b10010 y#
+b10010 {#
+1G#
+1;#
+b1 9
+b1 .#
+16#
+19#
+b11100 I#
+b101001 8#
+b101001 F#
+b101001 J#
+b101001 T#
+b1101 C#
+b111001 R#
+b10010 =#
+b10010 M#
+b10010 O#
+b1110111 .
+b100 #+
+1#
+#1230000
+0#
+#1235000
+1B
+b10010 S#
+b1001011 !$
+b1 7
+b1 )#
+1!
+1'#
+b1 ,#
+b10001 +#
+0F
+b0 A#
+0Q#
+0D
+1}#
+1N
+b1 6
+b1 &#
+1E
+1K
+b10101 =#
+b10101 M#
+b10101 O#
+b11 <#
+b11 K#
+b11 P#
+b10110 C#
+b10010 R#
+0>#
+b0 8#
+b0 F#
+b0 J#
+b0 T#
+0;#
+06#
+09#
+b101001 I#
+b10101 i#
+b10101 y#
+b10101 {#
+b11 h#
+b11 w#
+b11 |#
+b10110 o#
+b1001011 ~#
+b111001 d#
+b111001 r#
+b111001 v#
+b111001 "$
+1s#
+1g#
+b10 9
+b10 .#
+1b#
+1e#
+b101001 u#
+b1000 @
+b1111000 .
+b100 #+
+1#
+#1240000
+0#
+#1245000
+b10100 !$
+b101010 S#
+1L
+0B
+0}#
+0N
+b0 m#
+b10 A#
+0P
+b0 ,#
+b1 "
+b1 5
+b1 *#
+b10001 +#
+1'#
+1!
+b10 7
+b10 )#
+1F
+b1001 @
+b0 (#
+0g#
+b0 9
+b0 .#
+0b#
+0e#
+b111001 u#
+0j#
+b0 d#
+b0 r#
+b0 v#
+b0 "$
+b11111 o#
+b100 h#
+b100 w#
+b100 |#
+b10100 ~#
+b11000 i#
+b11000 y#
+b11000 {#
+b0 I#
+1>#
+b10010 8#
+b10010 F#
+b10010 J#
+b10010 T#
+b0 <#
+b0 K#
+b0 P#
+b101010 R#
+b11000 =#
+b11000 M#
+b11000 O#
+1O
+1U
+b10 6
+b10 &#
+0E
+0K
+b1111001 .
+b100 #+
+b1011 /
+1#
+#1250000
+0#
+#1255000
+b1000011 S#
+b101111 !$
+0L
+1P
+b1010 A#
+b100 m#
+b1 ,#
+b10001 +#
+0'#
+b0 "
+b0 5
+b0 *#
+0!
+b0 7
+b0 )#
+b0 6
+b0 &#
+0O
+0U
+b11011 =#
+b11011 M#
+b11011 O#
+b10 <#
+b10 K#
+b10 P#
+b11000 C#
+b1000011 R#
+b101010 8#
+b101010 F#
+b101010 J#
+b101010 T#
+b10010 I#
+b11011 i#
+b11011 y#
+b11011 {#
+b0 h#
+b0 w#
+b0 |#
+b101111 ~#
+1j#
+b10100 d#
+b10100 r#
+b10100 v#
+b10100 "$
+b0 u#
+b1 (#
+b1010 @
+b1111010 .
+b100 #+
+b1100 /
+1#
+#1260000
+0#
+#1265000
+b1001011 !$
+b1011110 S#
+b1111 m#
+b11 A#
+b1011 @
+b10100 u#
+b101111 d#
+b101111 r#
+b101111 v#
+b101111 "$
+b100011 o#
+b10 h#
+b10 w#
+b10 |#
+b1001011 ~#
+b11110 i#
+b11110 y#
+b11110 {#
+b101010 I#
+b1000011 8#
+b1000011 F#
+b1000011 J#
+b1000011 T#
+b100010 C#
+b11 <#
+b11 K#
+b11 P#
+b1011110 R#
+b11110 =#
+b11110 M#
+b11110 O#
+b1111011 .
+b100 #+
+1#
+#1270000
+0#
+#1275000
+b1111010 S#
+b1101001 !$
+b1110 A#
+b1011 m#
+b100001 =#
+b100001 M#
+b100001 O#
+b101 <#
+b101 K#
+b101 P#
+b100101 C#
+b1111010 R#
+b1011110 8#
+b1011110 F#
+b1011110 J#
+b1011110 T#
+b1000011 I#
+b100001 i#
+b100001 y#
+b100001 {#
+b11 h#
+b11 w#
+b11 |#
+b110010 o#
+b1101001 ~#
+b1001011 d#
+b1001011 r#
+b1001011 v#
+b1001011 "$
+b101111 u#
+b1100 @
+b1111100 .
+b100 #+
+1#
+#1280000
+0#
+#1285000
+b10001000 !$
+b10011000 S#
+b1001 m#
+b1010 A#
+b1101 @
+b1001011 u#
+b1101001 d#
+b1101001 r#
+b1101001 v#
+b1101001 "$
+b111101 o#
+b101 h#
+b101 w#
+b101 |#
+b10001000 ~#
+b100100 i#
+b100100 y#
+b100100 {#
+b1011110 I#
+b1111010 8#
+b1111010 F#
+b1111010 J#
+b1111010 T#
+b110011 C#
+b110 <#
+b110 K#
+b110 P#
+b10011000 R#
+b100100 =#
+b100100 M#
+b100100 O#
+b1111101 .
+b100 #+
+1#
