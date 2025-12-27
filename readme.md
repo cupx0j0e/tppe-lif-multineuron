@@ -622,6 +622,28 @@ spike_valid/spike_id       | Output spike stream
 
 ---
 
+## Known Limitations
+
+The current implementation is functionally complete and architecturally correct, but the following limitations are intentionally present:
+
+1. **Scan-Window-Based Firing**  
+   Neuron firing is evaluated at scan boundaries rather than continuously every cycle. This simplifies timing and avoids race conditions, but limits spike timing resolution.
+
+2. **Single Spike per Neuron per Scan Window**  
+   Each neuron can emit at most one spike per scan window. This prevents burst firing and enforces a coarse refractory behavior.
+
+3. **Static Weights (Inference Only)**  
+   Pattern weights are fixed. No on-chip learning or weight adaptation is implemented in this version.
+
+4. **Single TPPE Instance**  
+   A single TPPE is shared across all neurons, limiting throughput scalability. Multi-TPPE replication is left for future work.
+
+5. **Integer Arithmetic Model**  
+   All computations use integer arithmetic. Fixed-point or higher-precision variants are not included.
+
+These constraints are design choices made to keep the system simple, verifiable, and extensible. They do not affect correctness of the implemented architecture.
+
+
 ## Future Work
 
 ### 1. Fixed-Point (FxP) Version
@@ -719,12 +741,7 @@ Input → TPPE → LIF Layer 0 → TPPE → LIF Layer 1 → ... → Output
 
 ### Academic Papers
 
-1. Gerstner, W., & Kistler, W. M. (2002). *Spiking Neuron Models: Single Neurons, Populations, Plasticity*. Cambridge University Press.
-
-2. Tavanaei, A., et al. (2019). "Deep learning in spiking neural networks." *Neural Networks*, 111, 47-63.
-
-3. Davies, M., et al. (2018). "Loihi: A neuromorphic manycore processor with on-chip learning." *IEEE Micro*, 38(1), 82-99.
-
+1. LoAS: Fully Temporal-Parallel Dataflow for Dual-Sparse Spiking Neural Networks
 ### Design Documentation
 
 - Icarus Verilog Documentation: http://iverilog.icarus.com/
@@ -733,18 +750,4 @@ Input → TPPE → LIF Layer 0 → TPPE → LIF Layer 1 → ... → Output
 
 ---
 
-## License
 
-This project is provided for educational and research purposes.
-
----
-
-## Contact
-
-For questions, issues, or contributions, please contact the project maintainer.
-
----
-
-## Acknowledgments
-
-Special thanks to contributors and reviewers who helped debug and optimize this design.
